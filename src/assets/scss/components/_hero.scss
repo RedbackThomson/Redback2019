@@ -1,0 +1,30 @@
+.hero {
+  background-image: url(./../img/redox_01.png), linear-gradient(45deg, #20263a 0%,#4f5f93 100%);
+  background-blend-mode: multiply;
+  height: 100vh;
+
+  &__username {
+    color: $light-font-colour;
+    font-size: 3.5rem;
+    filter: drop-shadow(0 0 2.5rem $dark-font-colour);
+
+    &:after {
+      $shadow-size: 25rem;
+
+      content: ' ';
+      display: block;
+      height: $shadow-size;
+      width: $shadow-size;
+      position: absolute;
+      top: calc(2rem - #{$shadow-size/2});
+      left: calc(50% - #{$shadow-size/2});
+
+      z-index: -1;
+      background-image: url(./../img/RB_Shadow.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-blend-mode: multiply;
+    }
+  }
+}
