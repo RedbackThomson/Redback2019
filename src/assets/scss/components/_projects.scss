@@ -1,0 +1,9 @@
+.projects {
+  padding: 5rem 0 2rem;
+
+  &__row {
+    &:not(:first-child) {
+      margin-top: 3rem;
+    }
+  }
+}

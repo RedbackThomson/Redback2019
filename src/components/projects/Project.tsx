@@ -1,0 +1,80 @@
+import * as React from "react";
+import BaseProject from "./BaseProject";
+import classnames from "classnames";
+
+export interface ProjectProps {
+  project: BaseProject,
+  right?: boolean,
+  small?: boolean
+}
+
+export default class Project extends React.Component<ProjectProps, undefined> {
+    appBadge = (web: boolean, solid: boolean, appType?: string) =>
+        <span className={classnames("project__app-badge", "badge",
+            {"project__app-badge--custom": !web,
+            "project__app-badge--solid": solid})}>
+            {web ? "Web" : appType}
+        </span>;
+    
+
+    render() {
+        let {project, right, small} = this.props;
+        // Normalize booleans
+        right = !!right;
+        small = !!small;
+
+        let projectStyle = {
+            background: project.backgroundColour.background
+        };
+
+        return (
+            <div className={classnames({"col-12": !small,
+                "col-md-4": small,})} id={`#${project.anchor}`}>
+
+                <div className={classnames("project__container", 
+                    {"project__container--small": small})}>
+
+                    <div className={classnames("row", "no-gutters", "project", {
+                        "project--small": small
+                    })}
+                        style={projectStyle}>
+
+                        {project.featureBackground && <div className={
+                            classnames("project__feature-bg",
+                                "d-none",
+                                "d-md-block",
+                                {"project__feature-bg--right":
+                                    right != !!project.featureBackgroundFlip
+                                }
+                            )}>
+                            <img src={project.featureBackground} />
+                        </div>}
+
+                        {project.backgroundStroke && <div className="project__stroke">
+                            <img src={project.backgroundStroke} />
+                        </div>}
+
+                        <div className="col-md-6 col-sm-12 project__feature">
+                            <img src={project.feature} />
+                        </div>
+
+                        <div className={classnames("project__description",
+                            {   "col-md-6": !small,
+                                "col-sm-12": !small,
+                                "order-md-last": !small && !right,
+                                "order-sm-first": !small,
+                                "col-12": small,
+                                "order-first": right || small,
+                                "project__description--right": right,
+                                "project__description--inverse": project.dark,
+                                "project__description--small": small})}>
+                            <h2 className="project__name">{project.name}</h2>
+                            <h3 className="project__subtitle">{project.subtitle}</h3>
+                            {this.appBadge(project.web, !!project.dark, project.appType)}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}

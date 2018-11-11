@@ -1,4 +1,143 @@
 .project {
-  scroll-behavior: smooth;
-  height: 10rem;
+  border-radius: $global-border-radius;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: $global-box-shadow;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    height: 20rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 5rem;
+  }
+
+  &--small {
+    height: 25rem;
+  }
+
+  &__container {
+    &--small {
+      padding-right: 2rem;
+    }
+  }
+
+  &__description {
+    $text-padding: 4rem;
+    padding-right: $text-padding;
+    text-align: center;
+    color: $project-font-colour;
+
+    &--right {
+      padding-left: $text-padding;
+    }
+
+    &--inverse {
+      color: $project-inverse-font-colour;
+    }
+
+    &--small {
+      padding: 0 !important;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-weight: 200;
+    font-size: 1.1rem;
+  }
+
+  &__app-badge {
+    $badge-transparency: 0.8;
+
+    font-weight: 300;
+    font-size: 1rem;
+    background: transparentize($badge-web, $badge-transparency);
+    border-radius: $global-border-radius;
+    margin-top: 1.2rem;
+    padding: 0.4rem 0.7rem;
+
+    &--solid {
+      background: $badge-web;
+    }
+  }
+
+  &__feature {
+    height: 100%;
+    display: flex;
+    flex: column;
+    align-items: flex-end;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+    }
+
+    &--right {
+      img {
+        border-radius: 0 $global-border-radius $global-border-radius 0;
+      }
+    }
+
+  }
+
+  &__feature-bg {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: $global-border-radius;
+    overflow: hidden;
+    text-align: left;
+
+    img {
+      height: 100%;
+      width: auto;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+    }
+
+    &--right {
+      right: 0;
+      text-align: right;
+
+      img {
+        border-radius: 0 $global-border-radius $global-border-radius 0;
+      }
+    }
+  }
+
+  &__stroke {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: $global-border-radius;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+      position: absolute;
+
+      @include media-breakpoint-down(sm) {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
 }

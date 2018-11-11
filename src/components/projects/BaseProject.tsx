@@ -1,14 +1,23 @@
-export default interface BaseProject {
+export default class BaseProject {
   name: string;
-  subtitle: string;
+  subtitle: React.ReactNode;
   url: string;
   startDate: string;
   endDate: string;
   source: string;
-  thumbnail: object;
+  thumbnail: HTMLImageElement;
+  feature: HTMLImageElement;
   images: object[];
   colour: string;
+  backgroundColour: React.CSSProperties;
+  backgroundStroke?: HTMLImageElement;
+  featureBackground?: HTMLImageElement;
+  featureBackgroundFlip?: boolean;
   languages: string[];
+  web: boolean;
+  appType?: string;
   body: string;
   anchor: string;
+  small?: boolean;
+  dark?: boolean;
 };

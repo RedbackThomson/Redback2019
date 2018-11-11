@@ -3,7 +3,7 @@
   background-blend-mode: multiply;
 
   z-index: -10;
-  height: 100vh;
+  height: 75vh;
 
   &__overlay {
     width: 100%;
@@ -20,7 +20,7 @@
   &__username {
     color: $light-font-colour;
     font-size: 3.5rem;
-    filter: drop-shadow(0 0 2.5rem $dark-font-colour);
+    filter: $global-drop-shadow;
     pointer-events: none;
 
     &:before {
@@ -35,7 +35,7 @@
       left: calc(50% - #{$shadow-size/2});
 
       z-index: -10;
-      background-image: url(./../img/RB_Shadow.png);
+      background-image: url(./../img/RT_Shadow.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;

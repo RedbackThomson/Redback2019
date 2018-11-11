@@ -7,7 +7,7 @@
   font-weight: 700;
 
   padding: 0.7rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: $global-border-radius;
 
   &:not(:first-child) {
     margin-left: 1rem;
@@ -16,6 +16,7 @@
   &:hover {
     background: $navigation-primary;
     color: $white;
+    cursor: pointer;
 
     &:after {
       color: $white;
@@ -39,6 +40,19 @@
 
     &:after {
       color: $navigation-secondary;
+    }
+  }
+
+  &--small {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.7rem;
+  }
+
+  &--opaque {
+    color: $navigation-primary !important;
+
+    &:hover {
+      color: $white !important;
     }
   }
 }

@@ -3,7 +3,7 @@
   padding-left: 0;
   position: fixed;
   right: 2rem;
-  top: 5rem;
+  top: 2rem;
   z-index: 1;
   opacity: 1;
   transition: opacity 0.15s;
@@ -27,6 +27,11 @@
     }
   }
 
+  &__logo {
+    max-width: 3rem;
+    margin-bottom: 1rem;
+  }
+
   &__item {
     width: 6rem;
     text-align: center;
@@ -38,7 +43,7 @@
     flex-direction: row;
     align-items: center;
     border: 2px solid transparent;
-    border-radius: 0.5rem;
+    border-radius: $global-border-radius;
     cursor: pointer;
     transition: border-color 0.15s, background-color 0.15s;
     font-family: 'Lato', sans-serif;
