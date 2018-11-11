@@ -8,14 +8,16 @@ export default {
   endDate: "March, 2016",
   source: "https://github.com/OsuCelebrity/OsuCelebrity",
   thumbnail: require("./../../assets/img/projects/osucelebrity/logo.png"),
+  feature: require("./../../assets/img/projects/osucelebrity/feature.png"),
   images: [
     require("./../../assets/img/projects/osucelebrity/preview.jpg"),
     require("./../../assets/img/projects/osucelebrity/twitch.jpg")
   ],
   colour: "#E963A1",
   backgroundColour: {
-    background: 'linear-gradient(to right bottom, #430089, #82ffa1)'
+    background: 'linear-gradient(0deg, #E963A1, #e963c8)'
   },
+  featureBackground: require("./../../assets/img/projects/osucelebrity/bg-shape.svg"),
   languages: [
     "Java", "Javascript"
   ],
