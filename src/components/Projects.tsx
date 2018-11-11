@@ -23,9 +23,9 @@ export default class Projects extends React.Component<ProjectsProps, undefined> 
                     </div>
                 )}
                 <div className="row projects__row">
-                    {smallProjects.map((project, i) => 
+                    {smallProjects.map((project, i) => (
                         <SmallProject project={project} />
-                    )}
+                    ))}
                 </div>
             </section>
         );

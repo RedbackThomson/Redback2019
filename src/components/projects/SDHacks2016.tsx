@@ -3,7 +3,7 @@ import BaseProject from "./BaseProject";
 
 export default {
   name: "SD Hacks 2016",
-  subtitle: "More than 3,000 registrations",
+  subtitle: "Fully customised hackathon website",
   url: "http://2016.sdhacks.io/",
   startDate: "June, 2016",
   endDate: "September, 2016",

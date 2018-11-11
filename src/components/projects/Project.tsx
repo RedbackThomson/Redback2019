@@ -28,42 +28,45 @@ export default class Project extends React.Component<ProjectProps, undefined> {
         return (
             <div className={classnames("col-12")} id={`#${project.anchor}`}>
 
-                <div className={classnames("project__container")}>
+                <a className="project__link" href="#">
 
-                    <div className={classnames("row", "no-gutters", "project")}
-                        style={projectStyle}>
+                    <div className={classnames("project__container")}>
 
-                        {project.featureBackground && <div className={
-                            classnames("project__feature-bg", "d-md-block",
-                                "d-none", {
-                                "project__feature-bg--right":
-                                    right != !!project.featureBackgroundFlip
-                                }
-                            )}>
-                            <img src={project.featureBackground} />
-                        </div>}
+                        <div className={classnames("row", "no-gutters", "project")}
+                            style={projectStyle}>
 
-                        {project.backgroundStroke && <div className="project__stroke">
-                            <img src={project.backgroundStroke} />
-                        </div>}
+                            {project.featureBackground && <div className={
+                                classnames("project__feature-bg", "d-md-block",
+                                    "d-none", {
+                                    "project__feature-bg--right":
+                                        right != !!project.featureBackgroundFlip
+                                    }
+                                )}>
+                                <img src={project.featureBackground} />
+                            </div>}
 
-                        <div className="col-md-6 col-sm-12 project__feature">
-                            <img src={project.feature} />
-                        </div>
+                            {project.backgroundStroke && <div className="project__stroke">
+                                <img src={project.backgroundStroke} />
+                            </div>}
 
-                        <div className={classnames("project__description",
-                                "col-md-6", "col-sm-12", "order-sm-first", {
-                                "order-md-last": !right,
-                                "order-first": right,
-                                "project__description--right": right,
-                                "project__description--inverse": project.dark,
-                            })}>
-                            <h2 className="project__name">{project.name}</h2>
-                            <h3 className="project__subtitle">{project.subtitle}</h3>
-                            {this.appBadge(project.web, !!project.dark, project.appType)}
+                            <div className="col-md-6 col-sm-12 project__feature">
+                                <img src={project.feature} />
+                            </div>
+
+                            <div className={classnames("project__description",
+                                    "col-md-6", "col-sm-12", "order-sm-first", {
+                                    "order-md-last": !right,
+                                    "order-first": right,
+                                    "project__description--right": right,
+                                    "project__description--inverse": project.dark,
+                                })}>
+                                <h2 className="project__name">{project.name}</h2>
+                                <h3 className="project__subtitle">{project.subtitle}</h3>
+                                {this.appBadge(project.web, !!project.dark, project.appType)}
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         );
     }

@@ -3,7 +3,7 @@ import BaseProject from "./BaseProject";
 
 export default {
   name: "MCast",
-  subtitle: "Community homepage",
+  subtitle: "Brand homepage and community forums",
   startDate: "September, 2013",
   endDate: "October, 2013",
   thumbnail: require("./../../assets/img/projects/mylixia/logo.png"),

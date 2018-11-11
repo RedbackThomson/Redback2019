@@ -3,7 +3,7 @@ import BaseProject from "./BaseProject";
 
 export default {
   name: "osu!Celebrity",
-  subtitle: "500+ daily viewers",
+  subtitle: "Fully-automated Twitch stream",
   startDate: "August, 2015",
   endDate: "March, 2016",
   source: "https://github.com/OsuCelebrity/OsuCelebrity",
