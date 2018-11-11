@@ -1,3 +1,8 @@
 .projects {
   padding: 5rem 0 2rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

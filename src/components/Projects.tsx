@@ -18,11 +18,11 @@ export default class Projects extends React.Component<ProjectsProps, undefined> 
         return (
             <section className="container projects" id="projects">
                 {largeProjects.map((project, i) => 
-                    <div className="row projects__row">
+                    <div className="row no-gutters projects__row">
                         <Project project={project} right={i%2 == 1} />
                     </div>
                 )}
-                <div className="row projects__row">
+                <div className="row no-gutters projects__row">
                     {smallProjects.map((project, i) => (
                         <SmallProject project={project} />
                     ))}

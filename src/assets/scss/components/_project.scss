@@ -12,7 +12,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    padding-top: 5rem;
+    padding: 2rem 1rem 0;
   }
 
   &--small {
@@ -25,22 +25,23 @@
       $col-padding-md: 1rem;
       $col-padding-lg: 2rem;
 
-      &:first-child {
-        @include media-breakpoint-down(md) {
+      @include media-breakpoint-only(md) {
+        &:nth-child(odd) {
           padding-right: $col-padding-md;
         }
 
+        &:nth-child(even) {
+          padding-left: $col-padding-md;
+        }
+      }
+
+      &:first-child {
         @include media-breakpoint-up(lg) {
           padding-right: $col-padding-lg;
         }
       }
 
       &:not(:first-child):not(:last-child) {
-        @include media-breakpoint-down(md) {
-          padding-left: calc(7.5px + #{$col-padding-md/2});
-          padding-right: calc(7.5px + #{$col-padding-md/2});
-        }
-
         @include media-breakpoint-up(lg) {
           padding-left: calc(7.5px + #{$col-padding-lg/2});
           padding-right: calc(7.5px + #{$col-padding-lg/2});
@@ -48,10 +49,6 @@
       }
 
       &:last-child {
-        @include media-breakpoint-down(md) {
-          padding-left: $col-padding-md;
-        }
-
         @include media-breakpoint-up(lg) {
           padding-left: $col-padding-lg;
         }

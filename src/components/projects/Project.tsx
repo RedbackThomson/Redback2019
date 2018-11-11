@@ -49,12 +49,12 @@ export default class Project extends React.Component<ProjectProps, undefined> {
                                 <img src={project.backgroundStroke} />
                             </div>}
 
-                            <div className="col-md-6 col-sm-12 project__feature">
+                            <div className="col-md-6 col-12 project__feature">
                                 <img src={project.feature} />
                             </div>
 
                             <div className={classnames("project__description",
-                                    "col-md-6", "col-sm-12", "order-sm-first", {
+                                    "col-md-6", "col-sm-12", "order-first", {
                                     "order-md-last": !right,
                                     "order-first": right,
                                     "project__description--right": right,

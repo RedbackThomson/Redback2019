@@ -47,8 +47,8 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                                     </div>
 
                                     <div className={classnames("project__description", 
-                                                    "order-first", "project__description--small", {
-                                                    "project__description--inverse": project.dark,
+                                                "order-first", "project__description--small", {
+                                                "project__description--inverse": project.dark,
                                             })}>
                                             <h2 className="project__name">{project.name}</h2>
                                             <h3 className="project__subtitle">{project.subtitle}</h3>

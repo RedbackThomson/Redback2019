@@ -17,14 +17,11 @@ export default class App extends React.Component<any, any> {
     render() {
         let {projects} = this.state;
 
-        let anchors = projects.map((project) => project.anchor);
-        let thumbnails = projects.map((project) => project.thumbnail);
         return (
             <div className="app">
                 <Navbar />
                 <Hero />
                 <Projects projects={projects} />
-                {/* <ProjectSelector anchors={anchors} icons={thumbnails} /> */}
             </div>
         );
     }
