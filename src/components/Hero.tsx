@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Link} from 'react-scroll';
 
 export interface HeroProps {
 }
@@ -12,12 +13,12 @@ export default class Hero extends React.Component<HeroProps, undefined> {
                     RedbackThomson
                 </div>
                 <div className="hero__navigation">
-                    <a href="#" className="btn hero__cta">
-                        See Projects
-                    </a>
-                    <a href="#" className="btn hero__cta hero__cta--secondary">
+                    <Link to="projects" smooth={true} className="btn cta">
+                        Projects
+                    </Link>
+                    <Link to="#" className="btn cta cta--secondary">
                         Contact
-                    </a>
+                    </Link>
                 </div>
             </div>
         );

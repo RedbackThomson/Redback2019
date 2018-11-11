@@ -1,3 +1,73 @@
-.navbar {
-  
+.rdbk-navbar {
+  list-style: none;
+  padding-left: 0;
+  position: fixed;
+  right: 2rem;
+  top: 5rem;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.15s;
+
+  &--hidden {
+    opacity: 0;
+  }
+
+  &__scroll {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: $navigation-inactive !important;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      border: 2px solid $navigation-plain;
+      color: $navigation-plain !important;
+    }
+  }
+
+  &__item {
+    width: 6rem;
+    text-align: center;
+  }
+
+  &__btn {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background-color 0.15s;
+    font-family: 'Lato', sans-serif;
+
+    color: $navigation-inactive !important;
+
+    &:hover {
+      border: 2px solid $navigation-primary;
+      color: $navigation-primary !important;
+    }
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    &--secondary {
+      &:hover {
+        border: 2px solid $navigation-secondary;
+        color: $navigation-secondary !important;
+      }
+    }
+
+    &--active {
+      color: $white !important;
+      background: $navigation-primary;
+
+      &:hover {
+        color: $white !important;
+      }
+    }
+  }
 }

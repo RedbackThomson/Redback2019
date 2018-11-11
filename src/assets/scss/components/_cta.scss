@@ -1,0 +1,44 @@
+.cta {
+  border: 2px solid $navigation-primary;
+  background: none;
+  color: $white !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  &:hover {
+    background: $navigation-primary;
+    color: $white;
+
+    &:after {
+      color: $white;
+    }
+  }
+
+  &:after {
+    content: '';
+    font-family: "Font Awesome 5 Free";
+    margin-left: 0.5rem;
+    color: $navigation-primary;
+    transition: color 0.15s;
+  }
+
+  &--secondary {
+    border-color: $navigation-secondary;
+
+    &:hover {
+      background: $navigation-secondary;
+    }
+
+    &:after {
+      color: $navigation-secondary;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "name": "SD Hacks 2017",
+    "subtitle": "Complete Redesign",
+    "url": "https://www.sdhacks.io/",
+    "start_date": "April, 2017",
+    "end_date": "October, 2017",
+    "source": "https://github.com/SDHacks/SDHacks2017",
+    "thumbnail": "img/projects/sdhacks2017/logo.png",
+    "images": [
+      "img/projects/sdhacks2017/feature.jpg",
+      "img/projects/sdhacks2017/home.jpg",
+      "img/projects/sdhacks2017/profile.jpg",
+      "img/projects/sdhacks2017/live.jpg",
+      "img/projects/sdhacks2017/admin.jpg",
+      "img/projects/sdhacks2017/resume.jpg"
+    ],
+    "colour": "#63cbe2",
+    "languages": [
+      "React", "Redux", "MongoDB"
+    ],
+    "body": "SDHacks 2017 was a complete redesign and redevelopment of the 2016 SDHacks website, for UC San Diego’s annual hackathon. This redesign included developing the entire website on a React base, connecting to our MongoDB database through the Express server. The project included a working application and profile feature set for users, an administration back-end for organisers and a resume portal for corporate sponsors. Web Design was done by Vincent Liaw, and all development done by myself.",
+    "anchor": "sdhacks2017"
+  },
+  {
+    "name": "D-Loc",
+    "subtitle": "Distributed file system",
+    "url": "https://devpost.com/software/d-loc",
+    "start_date": "September, 2016",
+    "end_date": "Present",
+    "source": "https://github.com/D-Lock",
+    "thumbnail": "img/projects/dloc/logo.png",
+    "images": [
+      "img/projects/dloc/UI.png",
+      "img/projects/dloc/login.jpg",
+      "img/projects/dloc/devices.jpg"
+    ],
+    "colour": "#7E52B7",
+    "languages": [
+      "Angular", "Node", "Python", "Electron"
+    ],
+    "body": "D-Loc is an encrypted, distributed file system that enables users to spread private files over multiple computers. After encrypting a file, and sending it to the server, D-Loc then breaks the files up into any number of parts and sends each part to all connected clients of the user. This ensures that the file is not accessible solely on any one computer at any time. When the user wants to retrieve the file, they connect all the devices back to the server and request the file be made whole. D-Loc won the “Best Data Security Hack” prize at SDHacks 2016 as well as the “1517 Fund Award” at Calhacks 3.0. The project is built in Angular wrapped in Electron for the front end, with a NodeJS web-server, using Python scripts for encryption and distribution.",
+    "anchor": "dloc"
+  },
+  {
+    "name": "SD Hacks 2016",
+    "subtitle": "More than 3,000 registrations",
+    "url": "http://2016.sdhacks.io/",
+    "start_date": "June, 2016",
+    "end_date": "September, 2016",
+    "source": "https://github.com/SDHacks/SDHacks2016",
+    "thumbnail": "img/projects/sdhacks/logo.png",
+    "images": [
+      "img/projects/sdhacks/feature.jpg",
+      "img/projects/sdhacks/website.jpg",
+      "img/projects/sdhacks/live.jpg",
+      "img/projects/sdhacks/resume_browser.jpg",
+      "img/projects/sdhacks/prizes.jpg"
+    ],
+    "colour": "#5A9AC2",
+    "languages": [
+      "Node", "MongoDB", "Heroku"
+    ],
+    "body": "SD Hacks was a stunning website designed and created for the 2016 hackathon hosted at the University of California, San Diego. As this website was targeting techies, it needed to fit all devices and browsers without compromising on design and functionality. SD Hacks incorporated a built in application system, with an accompanying administration panel and user pages. It also had a section for sponsors to filter and download participants’ resumes. All of this was built on top of a MEAN stack, utilising Heroku for the hosting.",
+    "anchor": "sdhacks"
+  },
+  {
+    "name": "Market Monitor",
+    "subtitle": "Hybrid cross-platform app",
+    "start_date": "August, 2015",
+    "end_date": "October, 2015",
+    "source": "https://github.com/RedbackThomson/MarketMonitor",
+    "thumbnail": "img/projects/marketmonitor/logo.png",
+    "images": [
+      "img/projects/marketmonitor/preview.jpg"
+    ],
+    "colour": "#486CD0",
+    "languages": [
+      "Javascript", "Ionic"
+    ],
+    "body": "Market Monitor was a highly functional, yet simple, hybrid application commissioned by a New York listed stock broking technology company. The company already had a desktop-based solution for determining when markets were opening, closing, at lunch or on holiday. However, this in-house system was too basic for their needs, and was no longer supported. Market Monitor was a more developed, customised version of their product for their mobile devices. It was built in Javascript on top of the Ionic libraries.",
+    "anchor": "marketmonitor"
+  },
+  {
+    "name": "osu!Celebrity",
+    "subtitle": "500+ daily viewers",
+    "start_date": "August, 2015",
+    "end_date": "March, 2016",
+    "source": "https://github.com/OsuCelebrity/OsuCelebrity",
+    "thumbnail": "img/projects/osucelebrity/logo.png",
+    "images": [
+      "img/projects/osucelebrity/preview.jpg",
+      "img/projects/osucelebrity/twitch.jpg"
+    ],
+    "colour": "#E963A1",
+    "languages": [
+      "Java", "Javascript"
+    ],
+    "body": "osu!Celebrity was an experiment that turned out to be wildly successful. I initially contacted a designer to help me create a proof-of-concept [Twitch](https://twitch.tv) stream for an online game called [osu!](https://osu.ppy.sh). This stream allowed players to queue up for their 30 seconds of fame, in which they would be able to play osu! in front of thousands of viewers. In this time, viewers could vote on whether they wanted to see more of this player, or move on to the next one. In just a few weeks we grew to 500+ daily viewers, peaking over 2,000 viewers on some days. The back-end system was built in Java, but utilises a Javascript and HTML front-end to overlay the game client.",
+    "anchor": "osucelebrity"
+  },
+  {
+    "name": "LoLAlerter",
+    "subtitle": "Over 100,000 daily viewers",
+    "start_date": "August, 2014",
+    "end_date": "February, 2015",
+    "source": "https://github.com/RedbackThomson/LoLAlerter",
+    "thumbnail": "img/projects/lolalerter/logo.png",
+    "images": [
+      "img/projects/lolalerter/website.jpg",
+      "img/projects/lolalerter/inner.jpg"
+    ],
+    "colour": "#45A9B7",
+    "languages": [
+      "PHP", "Python"
+    ],
+    "body": "LoLAlerter was a project built out of necessity by the community. The program took only 3 simple steps to configure, making it easily accessible to the League of Legends streamers. LoLAlerter would alert the [Twitch](https://twitch.tv) streamer when they got a new subscriber or donation, by sending them a message in-game. This would allow them to keep their eyes on the game, yet still acknowledge and thank their generous viewers. The servers were built using Python, and the website was built in PHP on top of Laravel.",
+    "anchor": "lolalerter"
+  },
+  {
+    "name": "LoLShadow",
+    "subtitle": "Over 1,000 active users",
+    "start_date": "September, 2014",
+    "end_date": "February, 2015",
+    "source": "https://github.com/RedbackThomson/LoLShadow",
+    "thumbnail": "img/projects/lolshadow/logo.png",
+    "images": [
+      "img/projects/lolshadow/feature.jpg",
+      "img/projects/lolshadow/inner.jpg"
+    ],
+    "colour": "#2D3F4A",
+    "languages": [
+      "PHP", "Python"
+    ],
+    "body": "LoLShadow was the successor of [LoLAlerter](/#/lolalerter). After the wild success of the program from the League of Legend  streaming community, others were asking for a more general version. Since LoLAlerter was only for those partnered with [Twitch](https://twitch.tv), others who had not yet been partnered wanted an alternative that would do the same thing except, instead of notifying subscribers and donators, would notify followers. Due to being super simple to set up, and free to use, this too became heavily trafficked. Ultimately, LoLShadow was being run across 3 Python servers with a web interface built in PHP on top of Laravel.",
+    "anchor": "lolshadow"
+  },
+  {
+    "name": "osu!Track",
+    "subtitle": "Tracked over 200,000 users",
+    "start_date": "June, 2014",
+    "end_date": "January, 2016",
+    "thumbnail": "img/projects/osutrack/logo.png",
+    "url": "https://ameobea.me/osutrack/",
+    "images": [
+      "img/projects/osutrack/preview.jpg",
+      "img/projects/osutrack/profile.jpg"
+    ],
+    "colour": "#C88997",
+    "languages": [
+      "PHP", "Bootstrap"
+    ],
+    "body": "osu!Track was a small side-project that I intended on using to better my understanding of web design and back-end development. The idea of osu!Track was to allow players of the game [osu!](https://osu.ppy.sh) to track their progress over a number of months or even years. It would periodically take a snapchat of your current statistics, and allow you to browse the growth of these statistics in the form of graphs and tables on the website. The website base was built in PHP, with the servers that grabbed the data from the game client built with Python.",
+    "anchor": "osutrack"
+  },
+  {
+    "name": "MCast",
+    "subtitle": "Community homepage",
+    "start_date": "September, 2013",
+    "end_date": "October, 2013",
+    "thumbnail": "img/projects/mylixia/logo.png",
+    "images": [
+      "img/projects/mylixia/preview.jpg"
+    ],
+    "colour": "#6386C2",
+    "languages": [
+      "PHP", "CakePHP"
+    ],
+    "body": "MCast was the homepage of the legendary League of Legends streamer and player, Mylixia. It served not only as a portal for all of his fans, but also as a social media hub, a blog and a forum. My role was not to design the website, but to implement its back end, and front-end interactivity. All of the social media sections would update live, and the schedule, blog, poll and FAQ could all be updated by Mylixia from the administration panel. The website was built entirely in PHP on top of CakePHP, with jQuery used for front-end interactivity.",
+    "anchor": "mcast"
+  }
+]
