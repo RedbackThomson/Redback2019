@@ -5,6 +5,7 @@
   align-items: center;
   box-shadow: $global-box-shadow;
   position: relative;
+  margin-bottom: 3rem;
 
   @include media-breakpoint-up(md) {
     height: 20rem;
@@ -16,11 +17,45 @@
 
   &--small {
     height: 25rem;
+    padding-top: 2rem;
   }
 
-  &__container {
+  &__col {
     &--small {
-      padding-right: 2rem;
+      $col-padding-md: 1rem;
+      $col-padding-lg: 2rem;
+
+      &:first-child {
+        @include media-breakpoint-down(md) {
+          padding-right: $col-padding-md;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding-right: $col-padding-lg;
+        }
+      }
+
+      &:not(:first-child):not(:last-child) {
+        @include media-breakpoint-down(md) {
+          padding-left: calc(7.5px + #{$col-padding-md/2});
+          padding-right: calc(7.5px + #{$col-padding-md/2});
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding-left: calc(7.5px + #{$col-padding-lg/2});
+          padding-right: calc(7.5px + #{$col-padding-lg/2});
+        }
+      }
+
+      &:last-child {
+        @include media-breakpoint-down(md) {
+          padding-left: $col-padding-md;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding-left: $col-padding-lg;
+        }
+      }
     }
   }
 
@@ -70,8 +105,8 @@
   &__feature {
     height: 100%;
     display: flex;
-    flex: column;
     align-items: flex-end;
+    z-index: 2;
 
     img {
       max-height: 100%;

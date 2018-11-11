@@ -4,8 +4,7 @@ import classnames from "classnames";
 
 export interface ProjectProps {
   project: BaseProject,
-  right?: boolean,
-  small?: boolean
+  right?: boolean
 }
 
 export default class Project extends React.Component<ProjectProps, undefined> {
@@ -18,32 +17,26 @@ export default class Project extends React.Component<ProjectProps, undefined> {
     
 
     render() {
-        let {project, right, small} = this.props;
+        let {project, right} = this.props;
         // Normalize booleans
         right = !!right;
-        small = !!small;
 
         let projectStyle = {
             background: project.backgroundColour.background
         };
 
         return (
-            <div className={classnames({"col-12": !small,
-                "col-md-4": small,})} id={`#${project.anchor}`}>
+            <div className={classnames("col-12")} id={`#${project.anchor}`}>
 
-                <div className={classnames("project__container", 
-                    {"project__container--small": small})}>
+                <div className={classnames("project__container")}>
 
-                    <div className={classnames("row", "no-gutters", "project", {
-                        "project--small": small
-                    })}
+                    <div className={classnames("row", "no-gutters", "project")}
                         style={projectStyle}>
 
                         {project.featureBackground && <div className={
-                            classnames("project__feature-bg",
-                                "d-none",
-                                "d-md-block",
-                                {"project__feature-bg--right":
+                            classnames("project__feature-bg", "d-md-block",
+                                "d-none", {
+                                "project__feature-bg--right":
                                     right != !!project.featureBackgroundFlip
                                 }
                             )}>
@@ -59,15 +52,12 @@ export default class Project extends React.Component<ProjectProps, undefined> {
                         </div>
 
                         <div className={classnames("project__description",
-                            {   "col-md-6": !small,
-                                "col-sm-12": !small,
-                                "order-md-last": !small && !right,
-                                "order-sm-first": !small,
-                                "col-12": small,
-                                "order-first": right || small,
+                                "col-md-6", "col-sm-12", "order-sm-first", {
+                                "order-md-last": !right,
+                                "order-first": right,
                                 "project__description--right": right,
                                 "project__description--inverse": project.dark,
-                                "project__description--small": small})}>
+                            })}>
                             <h2 className="project__name">{project.name}</h2>
                             <h3 className="project__subtitle">{project.subtitle}</h3>
                             {this.appBadge(project.web, !!project.dark, project.appType)}

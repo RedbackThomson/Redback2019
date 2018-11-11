@@ -2,6 +2,7 @@ import * as React from "react";
 import classnames from "classnames";
 import Project from "./projects/Project";
 import BaseProject from "./projects/BaseProject";
+import SmallProject from "./projects/SmallProject";
 
 export interface ProjectsProps {
     projects: BaseProject[]
@@ -21,11 +22,11 @@ export default class Projects extends React.Component<ProjectsProps, undefined> 
                         <Project project={project} right={i%2 == 1} />
                     </div>
                 )}
-                {/* <div className="row projects__row">
+                <div className="row projects__row">
                     {smallProjects.map((project, i) => 
-                        <Project project={project} small />
+                        <SmallProject project={project} />
                     )}
-                </div> */}
+                </div>
             </section>
         );
     }

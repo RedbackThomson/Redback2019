@@ -9,6 +9,7 @@ export default {
   endDate: "September, 2016",
   source: "https://github.com/SDHacks/SDHacks2016",
   thumbnail: require("./../../assets/img/projects/sdhacks/logo.png"),
+  feature: require("./../../assets/img/projects/sdhacks/feature.png"),
   images: [
     require("./../../assets/img/projects/sdhacks/feature.jpg"),
     require("./../../assets/img/projects/sdhacks/website.jpg"),
@@ -18,8 +19,9 @@ export default {
   ],
   colour: "#5A9AC2",
   backgroundColour: {
-    background: 'linear-gradient(to right bottom, #430089, #82ffa1)'
+    background: 'linear-gradient(to right bottom, #4B4B4B, #2E2E2E)'
   },
+  featureBackground: require("./../../assets/img/projects/sdhacks/bg-hex.svg"),
   languages: [
     "Node", "MongoDB", "Heroku"
   ],
