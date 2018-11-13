@@ -12,7 +12,7 @@ export default class Footer extends React.Component<undefined, undefined> {
     }
 
     currentYear() {
-        return ((new Date()).getFullYear);
+        return ((new Date()).getFullYear());
     }
 
     render() {
@@ -20,15 +20,18 @@ export default class Footer extends React.Component<undefined, undefined> {
             <section id="footer" className="footer">
               <div className="container">
                 <div className="row">
-                  <div className="col footer__logo">
+                  <div className="col-12 col-lg-4 footer__logo">
                     <img src={logo} />
                   </div>
 
-                  <div className="col footer__social">
+                  <div className="col-12 col-lg-4 order-last footer__copy">
                     Copyright &copy; RedbackThomson {this.currentYear()}. All rights reserved.
+                  </div>
+
+                  <div className="col-12 col-lg-4 order-lg-last footer__social">
                     {this.renderSocial("Github",
-                        "https://github.com/RedbackThomson",
-                        "fab fa-github-square")}
+                    "https://github.com/RedbackThomson",
+                    "fab fa-github-square")}
                     {this.renderSocial("Email",
                         "mailto:redbackthomson@gmail.com",
                         "fas fa-envelope-square")}
