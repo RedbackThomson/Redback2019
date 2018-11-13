@@ -1,0 +1,39 @@
+.footer {
+  background-color: $footer-dark-colour;
+  padding: 2rem 0;
+  height: 7rem;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    $text-colour: transparentize($color: $white, $amount: 0.5);
+    text-align: center;
+    color: $text-colour;
+    font-size: 0.75rem;
+
+    a {
+      color: $text-colour;
+    }
+
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+
+  &__link {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+}

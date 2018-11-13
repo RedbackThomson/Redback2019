@@ -27,6 +27,7 @@
     font-size: 3.5rem;
     filter: $global-drop-shadow;
     pointer-events: none;
+    margin-bottom: 1rem;
 
     @include media-breakpoint-down(sm) {
       font-size: 2.5rem;

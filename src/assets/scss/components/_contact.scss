@@ -1,0 +1,19 @@
+.contact {
+  padding: 4rem 0;
+  background-color: $navigation-primary;
+  color: $light-font-colour;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding: 3rem 0;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__body {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -7,6 +7,11 @@
   z-index: 1;
   opacity: 1;
   transition: opacity 0.15s;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
 
   &--hidden {
     opacity: 0;
