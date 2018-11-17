@@ -42,15 +42,15 @@ export default class Project extends React.Component<ProjectProps, undefined> {
                                         right != !!project.featureBackgroundFlip
                                     }
                                 )}>
-                                <img src={project.featureBackground} />
+                                <img src={String(project.featureBackground)} />
                             </div>}
 
                             {project.backgroundStroke && <div className="project__stroke">
-                                <img src={project.backgroundStroke} />
+                                <img src={String(project.backgroundStroke)} />
                             </div>}
 
                             <div className="col-md-6 col-12 project__feature">
-                                <img src={project.feature} />
+                                <img src={String(project.feature)} />
                             </div>
 
                             <div className={classnames("project__description",

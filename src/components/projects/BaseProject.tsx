@@ -7,7 +7,7 @@ export default class BaseProject {
   source: string;
   thumbnail: HTMLImageElement;
   feature: HTMLImageElement;
-  images: object[];
+  images: HTMLImageElement[];
   colour: string;
   backgroundColour: React.CSSProperties;
   backgroundStroke?: HTMLImageElement;

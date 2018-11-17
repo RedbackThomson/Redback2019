@@ -16,7 +16,7 @@ export default class Hero extends React.Component<HeroProps, undefined> {
                     <Link to="projects" smooth={true} className="btn cta">
                         Projects
                     </Link>
-                    <Link to="#" className="btn cta cta--secondary">
+                    <Link to="contact" smooth={true} className="btn cta cta--secondary">
                         Contact
                     </Link>
                 </div>

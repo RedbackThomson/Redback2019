@@ -3,7 +3,7 @@ import Scrollspy from 'react-scrollspy';
 import {Link, animateScroll} from 'react-scroll';
 import classNames from 'classnames';
 
-const logo = require("./../assets/img/logo.svg");
+const logo = require("./../assets/img/logo-gradient.svg");
 
 export interface NavbarProps {
 }
@@ -44,7 +44,7 @@ export default class Navbar extends React.Component<NavbarProps, any> {
     }
 
     componentWillUnmount() {
-        window.addEventListener('scroll', this.hideBar);
+        window.removeEventListener('scroll', this.hideBar);
     }
 
     render() {

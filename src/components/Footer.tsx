@@ -1,11 +1,11 @@
 import * as React from "react";
 
-const logo = require("./../assets/img/logo.svg");
+const logo = require("./../assets/img/logo-gradient-words.svg");
 
-export default class Footer extends React.Component<undefined, undefined> {
+export default class Footer extends React.Component<any, undefined> {
     renderSocial(type: string, link: string, icon: string) {
         return (
-            <a href={link} title={type} className="footer__link">
+            <a href={link} title={type} className="footer__link" target="_new">
                 <i className={icon}></i>
             </a>
         );
@@ -25,7 +25,7 @@ export default class Footer extends React.Component<undefined, undefined> {
                   </div>
 
                   <div className="col-12 col-lg-4 order-last footer__copy">
-                    Copyright &copy; RedbackThomson {this.currentYear()}. All rights reserved.
+                    Copyright © RedbackThomson {this.currentYear()}. All rights reserved.
                   </div>
 
                   <div className="col-12 col-lg-4 order-lg-last footer__social">
