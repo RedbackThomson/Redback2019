@@ -22,7 +22,7 @@
     "test": "jest --watch --coverage --config=configs/jest.json",
     "heroku-postbuild": "yarn run build"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
