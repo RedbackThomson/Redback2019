@@ -25,7 +25,7 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                     <div className={classnames("col-md-6", "col-lg-4",
                         "project__col--small")} id={`#${project.anchor}`}>
 
-                        <a className="project__link" href="#">
+                        {/* <a className="project__link" href="#"> */}
 
                             <div className={classnames("project__container", 
                                 "project__container--small")}>
@@ -56,7 +56,7 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        {/* </a> */}
                     </div>
 				);
 		}

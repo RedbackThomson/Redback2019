@@ -4,6 +4,7 @@
 
   z-index: -10;
   height: 75vh;
+  max-height: 50rem;
 
   &__overlay {
     width: 100%;
@@ -27,7 +28,7 @@
     font-size: 3.5rem;
     filter: $global-drop-shadow;
     pointer-events: none;
-    margin-bottom: 2rem;
+    margin-bottom: 2.7rem;
 
     @include media-breakpoint-down(sm) {
       font-size: 2.5rem;

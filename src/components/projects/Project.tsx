@@ -28,7 +28,7 @@ export default class Project extends React.Component<ProjectProps, undefined> {
         return (
             <div className={classnames("col-12")} id={`#${project.anchor}`}>
 
-                <a className="project__link" href="#">
+                {/* <a className="project__link" href="#"> */}
 
                     <div className={classnames("project__container")}>
 
@@ -66,7 +66,7 @@ export default class Project extends React.Component<ProjectProps, undefined> {
                             </div>
                         </div>
                     </div>
-                </a>
+                {/* </a> */}
             </div>
         );
     }

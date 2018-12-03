@@ -17,13 +17,13 @@ export default class Contact extends React.Component<ContactProps, undefined> {
 
                 <div className="row">
                   <div className="col">
-                    <p className="contact__body">Lorem ipsum here.</p>
+                    <p className="contact__body">Interested in collaborating on a project or even just talking about new tech?</p>
                   </div>
                 </div>
 
                 <div className="row">
                   <div className="col">
-                    <p className="contact__cta btn cta cta--white">Get in Touch</p>
+                    <a href="mailto:redbackthomson@gmail.com" className="contact__cta btn cta cta--white">Get in Touch</a>
                   </div>
                 </div>
               </div>
