@@ -1,5 +1,4 @@
 import * as React from "react";
-import Scrollspy from 'react-scrollspy';
 import {Link, animateScroll} from 'react-scroll';
 import classNames from 'classnames';
 

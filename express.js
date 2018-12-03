@@ -1,11 +1,22 @@
 const express = require('express');
-const app = express();
-const portNumber = 3000;
+const throng = require('throng');
+
 const sourceDir = 'dist';
+const PORT = 3000;
+const WORKERS = process.env.WEB_CONCURRENCY || 1;
 
-app.use(express.static(sourceDir));
+throng({
+  workers: WORKERS,
+  lifetime: Infinity
+}, start);
 
-app.listen(portNumber, () => {
-  console.log(`Express web server started: http://localhost:${portNumber}`);
-  console.log(`Serving content from /${sourceDir}/`);
-});
+function start() {
+  var app = express();
+  app.use(express.static(sourceDir));
+  
+  app.listen(PORT, () => {
+    console.log(`Express web server started: http://localhost:${PORT}`);
+    console.log(`Serving content from /${sourceDir}/`);
+  });
+}
+

@@ -2,7 +2,6 @@ import * as React from "react";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
-import ProjectSelector from "./ProjectSelector";
 import AllProjects from "./projects/AllProjects";
 import Contact from "./Contact";
 import Footer from "./Footer";
