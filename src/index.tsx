@@ -2,12 +2,16 @@ import * as React from "react";
 import {render} from "react-dom";
 import {AppContainer} from "react-hot-loader";
 import Favicon from "react-favicon";
+import ReactGA from "react-ga";
+
 import App from "./components/App";
 
 import "./assets/scss/App.scss";
 
 const rootEl = document.getElementById("root");
 const favicon = require("./assets/img/favicon.png");
+
+ReactGA.initialize('UA-50560855-5');
 
 render(
     <AppContainer>
