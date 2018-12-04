@@ -1,6 +1,7 @@
 (function () {
   const express = require('express');
   const throng = require('throng');
+  const http = require('http');
   
   const sourceDir = 'dist';
   const PORT = process.env.PORT || 3000;
