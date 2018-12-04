@@ -1,15 +1,20 @@
 import * as React from "react";
 import {render} from "react-dom";
 import {AppContainer} from "react-hot-loader";
+import Favicon from "react-favicon";
 import App from "./components/App";
 
 import "./assets/scss/App.scss";
 
 const rootEl = document.getElementById("root");
+const favicon = require("./assets/img/favicon.png");
 
 render(
     <AppContainer>
-        <App/>
+        <>
+            <Favicon url={favicon} />
+            <App/>
+        </>
     </AppContainer>,
     rootEl
 );
@@ -19,11 +24,12 @@ declare let module: { hot: any };
 
 if (module.hot) {
     module.hot.accept("./components/App", () => {
-        const NewApp = require("./components/App").default;
-
         render(
             <AppContainer>
-                <NewApp/>
+                <>
+                    <Favicon url={favicon} />
+                    <App/>
+                </>
             </AppContainer>,
             rootEl
         );
