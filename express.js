@@ -1,7 +1,6 @@
 (function () {
   const express = require('express');
   const throng = require('throng');
-  const http = require('http');
   
   const sourceDir = 'dist';
   const PORT = process.env.PORT || 3000;
@@ -16,7 +15,7 @@
     var app = express();
     app.use(express.static(sourceDir));
        
-    http.createServer(app).listen(app.get(PORT), function(){
+    app.listen(PORT, () => {
       console.log(`Express server listening on port ${PORT} on ${WORKERS} worker(s)`);
       console.log(`Serving content from /${sourceDir}/`);
     });
