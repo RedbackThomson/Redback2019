@@ -31,6 +31,15 @@
     transition: color 0.15s;
   }
 
+  &--block {
+    display: block;
+    margin-bottom: 1rem;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+
   &--secondary {
     border-color: $navigation-secondary;
 

@@ -1,6 +1,6 @@
 .contact {
   padding: 4rem 0;
-  background-color: $navigation-primary;
+  background: linear-gradient(to top right, $navigation-primary 0%, lighten($navigation-primary, 5%) 100%);
   color: $light-font-colour;
   text-align: center;
 

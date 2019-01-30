@@ -30,7 +30,7 @@ export default class Navbar extends React.Component<NavbarProps, any> {
 
     hideBar = () => {
         this.setState({
-            isHidden: window.scrollY < (0.75*screen.height - 150)
+            isHidden: window.scrollY < (25 * parseFloat(getComputedStyle(document.documentElement).fontSize))
         });
     }
 

@@ -1,6 +1,6 @@
 .footer {
   $text-colour: transparentize($color: $white, $amount: 0.5);
-  background-color: $footer-dark-colour;
+  background: linear-gradient(to top right, $footer-dark-colour 0%, darken($footer-dark-colour, 5%) 100%);
   padding: 1.5rem 0;
   min-height: 7rem;
   font-family: 'Lato', sans-serif !important;
