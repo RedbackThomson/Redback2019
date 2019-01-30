@@ -1,4 +1,3 @@
-import * as React from 'react';
 import BaseProject from "./BaseProject";
 
 export default {
@@ -13,7 +12,7 @@ export default {
   ],
   colour: "#6386C2",
   backgroundColour: {
-    background: 'linear-gradient(to top right, #6386C2, #47618c)'
+    background: "linear-gradient(to top right, #6386C2, #47618c)"
   },
   featureBackground: require("./../../assets/img/projects/mylixia/bg-shape.svg"),
   languages: [

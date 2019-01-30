@@ -1,6 +1,6 @@
 import * as React from "react";
-import {Link, animateScroll} from 'react-scroll';
-import classNames from 'classnames';
+import {Link, animateScroll} from "react-scroll";
+import classNames from "classnames";
 
 const logo = require("./../assets/img/logo-gradient.svg");
 
@@ -14,13 +14,13 @@ export default class Navbar extends React.Component<NavbarProps, any> {
         this.state = {
             items: [
                 {
-                    name: 'Projects',
-                    anchor: 'projects',
+                    name: "Projects",
+                    anchor: "projects",
                     primary: true
                 },
                 {
-                    name: 'Contact',
-                    anchor: 'contact',
+                    name: "Contact",
+                    anchor: "contact",
                     primary: false
                 }
             ],
@@ -39,11 +39,11 @@ export default class Navbar extends React.Component<NavbarProps, any> {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.hideBar);
+        window.addEventListener("scroll", this.hideBar);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('scroll', this.hideBar);
+        window.removeEventListener("scroll", this.hideBar);
     }
 
     render() {
@@ -61,7 +61,7 @@ export default class Navbar extends React.Component<NavbarProps, any> {
                     <i className="fas fa-long-arrow-alt-up"></i>
                 </a>
 
-                {items.map((item) => 
+                {items.map((item) =>
                     <Link className={classNames("rdbk-navbar__item",
                         "rdbk-navbar__btn",
                         {"rdbk-navbar__btn--secondary": !item.primary})}

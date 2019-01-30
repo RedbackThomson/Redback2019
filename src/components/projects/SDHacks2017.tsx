@@ -1,4 +1,3 @@
-import * as React from 'react';
 import BaseProject from "./BaseProject";
 
 export default {
@@ -20,7 +19,7 @@ export default {
   ],
   colour: "#63cbe2",
   backgroundColour: {
-    background: '#EEE'
+    background: "#EEE"
   },
   featureBackground: require("./../../assets/img/projects/sdhacks2017/bg-stripes.svg"),
   featureBackgroundFlip: true,

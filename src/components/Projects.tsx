@@ -5,7 +5,7 @@ import BaseProject from "./projects/BaseProject";
 import SmallProject from "./projects/SmallProject";
 
 export interface ProjectsProps {
-    projects: BaseProject[]
+    projects: BaseProject[];
 }
 
 export default class Projects extends React.Component<ProjectsProps, undefined> {
@@ -17,9 +17,9 @@ export default class Projects extends React.Component<ProjectsProps, undefined> 
 
         return (
             <section className="container projects" id="projects">
-                {largeProjects.map((project, i) => 
+                {largeProjects.map((project, i) =>
                     <div className="row no-gutters projects__row">
-                        <Project project={project} right={i%2 == 1} />
+                        <Project project={project} right={i % 2 === 1} />
                     </div>
                 )}
                 <div className="row no-gutters projects__row">

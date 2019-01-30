@@ -3,8 +3,8 @@ import BaseProject from "./BaseProject";
 import classnames from "classnames";
 
 export interface ProjectProps {
-  project: BaseProject,
-  right?: boolean
+  project: BaseProject;
+  right?: boolean;
 }
 
 export default class Project extends React.Component<ProjectProps, undefined> {
@@ -13,8 +13,8 @@ export default class Project extends React.Component<ProjectProps, undefined> {
             {"project__app-badge--custom": !web,
             "project__app-badge--solid": solid})}>
             {web ? "Web" : appType}
-        </span>;
-    
+        </span>
+
 
     render() {
         let {project, right} = this.props;
@@ -39,7 +39,7 @@ export default class Project extends React.Component<ProjectProps, undefined> {
                                 classnames("project__feature-bg", "d-md-block",
                                     "d-none", {
                                     "project__feature-bg--right":
-                                        right != !!project.featureBackgroundFlip
+                                        right !== !!project.featureBackgroundFlip
                                     }
                                 )}>
                                 <img src={String(project.featureBackground)} />

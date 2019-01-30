@@ -1,4 +1,3 @@
-import * as React from 'react';
 import BaseProject from "./BaseProject";
 
 export default {
@@ -15,7 +14,7 @@ export default {
   ],
   colour: "#E963A1",
   backgroundColour: {
-    background: 'linear-gradient(0deg, #E963A1, #e963c8)'
+    background: "linear-gradient(0deg, #E963A1, #e963c8)"
   },
   featureBackground: require("./../../assets/img/projects/osucelebrity/bg-shape.svg"),
   languages: [

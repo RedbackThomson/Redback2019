@@ -3,31 +3,31 @@ import BaseProject from "./BaseProject";
 import classnames from "classnames";
 
 export interface SmallProjectProps {
-	project: BaseProject,
+    project: BaseProject;
 }
 
 export default class SmallProject extends React.Component<SmallProjectProps, undefined> {
-		appBadge = (web: boolean, solid: boolean, appType?: string) =>
+        appBadge = (web: boolean, solid: boolean, appType?: string) =>
             <span className={classnames("project__app-badge", "badge",
                 {"project__app-badge--custom": !web,
                 "project__app-badge--solid": solid})}>
                 {web ? "Web" : appType}
-            </span>;
-		
+            </span>
 
-		render() {
-				let {project} = this.props;
-				let projectStyle = {
+
+        render() {
+                let {project} = this.props;
+                let projectStyle = {
                     background: project.backgroundColour.background
-				};
+                };
 
-				return (
+                return (
                     <div className={classnames("col-md-6", "col-lg-4",
                         "project__col--small")} id={`#${project.anchor}`}>
 
                         {/* <a className="project__link" href="#"> */}
 
-                            <div className={classnames("project__container", 
+                            <div className={classnames("project__container",
                                 "project__container--small")}>
 
                                 <div className={classnames("d-flex", "flex-column", "project",
@@ -46,7 +46,7 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                                         <img src={String(project.feature)} />
                                     </div>
 
-                                    <div className={classnames("project__description", 
+                                    <div className={classnames("project__description",
                                             "order-first", "project__description--small", {
                                             "project__description--inverse": project.dark,
                                         })}>
@@ -58,6 +58,6 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                             </div>
                         {/* </a> */}
                     </div>
-				);
-		}
+                );
+        }
 }

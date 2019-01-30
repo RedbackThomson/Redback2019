@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import BaseProject from "./BaseProject";
 
 export default {
@@ -17,7 +17,7 @@ export default {
   ],
   colour: "#7E52B7",
   backgroundColour: {
-    background: 'linear-gradient(to top right, #7E52B7, #b853a7)'
+    background: "linear-gradient(to top right, #7E52B7, #b853a7)"
   },
   backgroundStroke: require("./../../assets/img/projects/dloc/bg-stroke.svg"),
   languages: [

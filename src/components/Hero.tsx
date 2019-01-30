@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Link} from 'react-scroll';
+import {Link} from "react-scroll";
 
 const logo = require("./../assets/img/logo-gradient.svg");
 
