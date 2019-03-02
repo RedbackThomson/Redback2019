@@ -5,16 +5,16 @@ export default {
   subtitle: "Brand homepage and community forums",
   startDate: "September, 2013",
   endDate: "October, 2013",
-  thumbnail: require("./../../assets/img/projects/mylixia/logo.png"),
-  feature: require("./../../assets/img/projects/mylixia/feature.png"),
+  thumbnail: require("Assets/img/projects/mylixia/logo.png"),
+  feature: require("Assets/img/projects/mylixia/feature.png"),
   images: [
-    require("./../../assets/img/projects/mylixia/preview.jpg")
+    require("Assets/img/projects/mylixia/preview.jpg")
   ],
   colour: "#6386C2",
   backgroundColour: {
     background: "linear-gradient(to top right, #6386C2, #47618c)"
   },
-  featureBackground: require("./../../assets/img/projects/mylixia/bg-shape.svg"),
+  featureBackground: require("Assets/img/projects/mylixia/bg-shape.svg"),
   languages: [
     "PHP", "CakePHP"
   ],

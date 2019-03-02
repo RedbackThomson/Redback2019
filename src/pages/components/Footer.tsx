@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const logo = require("./../assets/img/logo-gradient-words.svg");
+const logo = require("Assets/img/logo-gradient-words.svg");
 
 export default class Footer extends React.Component<any, undefined> {
     renderSocial(type: string, link: string, icon: string) {

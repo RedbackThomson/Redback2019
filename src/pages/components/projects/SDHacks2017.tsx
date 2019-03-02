@@ -7,21 +7,21 @@ export default {
   startDate: "April, 2017",
   endDate: "October, 2017",
   source: "https://github.com/SDHacks/SDHacks2017",
-  thumbnail: require("./../../assets/img/projects/sdhacks2017/logo.png"),
-  feature: require("./../../assets/img/projects/sdhacks2017/feature.png"),
+  thumbnail: require("Assets/img/projects/sdhacks2017/logo.png"),
+  feature: require("Assets/img/projects/sdhacks2017/feature.png"),
   images: [
-    require("./../../assets/img/projects/sdhacks2017/feature.jpg"),
-    require("./../../assets/img/projects/sdhacks2017/home.jpg"),
-    require("./../../assets/img/projects/sdhacks2017/profile.jpg"),
-    require("./../../assets/img/projects/sdhacks2017/live.jpg"),
-    require("./../../assets/img/projects/sdhacks2017/admin.jpg"),
-    require("./../../assets/img/projects/sdhacks2017/resume.jpg")
+    require("Assets/img/projects/sdhacks2017/feature.jpg"),
+    require("Assets/img/projects/sdhacks2017/home.jpg"),
+    require("Assets/img/projects/sdhacks2017/profile.jpg"),
+    require("Assets/img/projects/sdhacks2017/live.jpg"),
+    require("Assets/img/projects/sdhacks2017/admin.jpg"),
+    require("Assets/img/projects/sdhacks2017/resume.jpg")
   ],
   colour: "#63cbe2",
   backgroundColour: {
     background: "#EEE"
   },
-  featureBackground: require("./../../assets/img/projects/sdhacks2017/bg-stripes.svg"),
+  featureBackground: require("Assets/img/projects/sdhacks2017/bg-stripes.svg"),
   featureBackgroundFlip: true,
   languages: [
     "React", "Redux", "MongoDB"

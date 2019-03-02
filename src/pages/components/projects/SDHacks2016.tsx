@@ -7,20 +7,20 @@ export default {
   startDate: "June, 2016",
   endDate: "September, 2016",
   source: "https://github.com/SDHacks/SDHacks2016",
-  thumbnail: require("./../../assets/img/projects/sdhacks/logo.png"),
-  feature: require("./../../assets/img/projects/sdhacks/feature.png"),
+  thumbnail: require("Assets/img/projects/sdhacks/logo.png"),
+  feature: require("Assets/img/projects/sdhacks/feature.png"),
   images: [
-    require("./../../assets/img/projects/sdhacks/feature.jpg"),
-    require("./../../assets/img/projects/sdhacks/website.jpg"),
-    require("./../../assets/img/projects/sdhacks/live.jpg"),
-    require("./../../assets/img/projects/sdhacks/resume_browser.jpg"),
-    require("./../../assets/img/projects/sdhacks/prizes.jpg")
+    require("Assets/img/projects/sdhacks/feature.jpg"),
+    require("Assets/img/projects/sdhacks/website.jpg"),
+    require("Assets/img/projects/sdhacks/live.jpg"),
+    require("Assets/img/projects/sdhacks/resume_browser.jpg"),
+    require("Assets/img/projects/sdhacks/prizes.jpg")
   ],
   colour: "#5A9AC2",
   backgroundColour: {
     background: "linear-gradient(to right bottom, #4B4B4B, #2E2E2E)"
   },
-  featureBackground: require("./../../assets/img/projects/sdhacks/bg-hex.svg"),
+  featureBackground: require("Assets/img/projects/sdhacks/bg-hex.svg"),
   languages: [
     "Node", "MongoDB", "Heroku"
   ],

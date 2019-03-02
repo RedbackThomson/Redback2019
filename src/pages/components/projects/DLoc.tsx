@@ -8,18 +8,18 @@ export default {
   startDate: "September, 2016",
   endDate: "November, 2017",
   source: "https://github.com/D-Lock",
-  thumbnail: require("./../../assets/img/projects/dloc/logo.png"),
-  feature: require("./../../assets/img/projects/dloc/feature.png"),
+  thumbnail: require("Assets/img/projects/dloc/logo.png"),
+  feature: require("Assets/img/projects/dloc/feature.png"),
   images: [
-    require("./../../assets/img/projects/dloc/UI.png"),
-    require("./../../assets/img/projects/dloc/login.jpg"),
-    require("./../../assets/img/projects/dloc/devices.jpg")
+    require("Assets/img/projects/dloc/UI.png"),
+    require("Assets/img/projects/dloc/login.jpg"),
+    require("Assets/img/projects/dloc/devices.jpg")
   ],
   colour: "#7E52B7",
   backgroundColour: {
     background: "linear-gradient(to top right, #7E52B7, #b853a7)"
   },
-  backgroundStroke: require("./../../assets/img/projects/dloc/bg-stroke.svg"),
+  backgroundStroke: require("Assets/img/projects/dloc/bg-stroke.svg"),
   languages: [
     "Angular", "Node", "Python", "Electron"
   ],

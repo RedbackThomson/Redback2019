@@ -6,17 +6,17 @@ export default {
   startDate: "August, 2015",
   endDate: "March, 2016",
   source: "https://github.com/OsuCelebrity/OsuCelebrity",
-  thumbnail: require("./../../assets/img/projects/osucelebrity/logo.png"),
-  feature: require("./../../assets/img/projects/osucelebrity/feature.png"),
+  thumbnail: require("Assets/img/projects/osucelebrity/logo.png"),
+  feature: require("Assets/img/projects/osucelebrity/feature.png"),
   images: [
-    require("./../../assets/img/projects/osucelebrity/preview.jpg"),
-    require("./../../assets/img/projects/osucelebrity/twitch.jpg")
+    require("Assets/img/projects/osucelebrity/preview.jpg"),
+    require("Assets/img/projects/osucelebrity/twitch.jpg")
   ],
   colour: "#E963A1",
   backgroundColour: {
     background: "linear-gradient(0deg, #E963A1, #e963c8)"
   },
-  featureBackground: require("./../../assets/img/projects/osucelebrity/bg-shape.svg"),
+  featureBackground: require("Assets/img/projects/osucelebrity/bg-shape.svg"),
   languages: [
     "Java", "Javascript"
   ],

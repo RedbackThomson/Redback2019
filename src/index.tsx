@@ -4,20 +4,20 @@ import {AppContainer} from "react-hot-loader";
 import Favicon from "react-favicon";
 import ReactGA from "react-ga";
 
-import App from "./components/App";
+import Home from "./pages/Home";
 
-import "./assets/scss/App.scss";
+import "Assets/scss/App.scss";
 
 const rootEl = document.getElementById("root");
-const favicon = require("./assets/img/favicon.png");
+const favicon = require("Assets/img/favicon.png");
 
-ReactGA.initialize('UA-50560855-5');
+ReactGA.initialize("UA-50560855-5");
 
 render(
     <AppContainer>
         <>
             <Favicon url={favicon} />
-            <App/>
+            <Home/>
         </>
     </AppContainer>,
     rootEl
@@ -27,12 +27,12 @@ render(
 declare let module: { hot: any };
 
 if (module.hot) {
-    module.hot.accept("./components/App", () => {
+    module.hot.accept("./components/Home", () => {
         render(
             <AppContainer>
                 <>
                     <Favicon url={favicon} />
-                    <App/>
+                    <Home/>
                 </>
             </AppContainer>,
             rootEl

@@ -1,12 +1,12 @@
 import * as React from "react";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import AllProjects from "./projects/AllProjects";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import AllProjects from "./components/projects/AllProjects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-export default class App extends React.Component<any, any> {
+export default class Home extends React.Component<any, any> {
     constructor(props) {
         super(props);
 

@@ -2,12 +2,21 @@ import * as React from "react";
 import {Link, animateScroll} from "react-scroll";
 import classNames from "classnames";
 
-const logo = require("./../assets/img/logo-gradient.svg");
+const logo = require("Assets/img/logo-gradient.svg");
 
 export interface NavbarProps {
 }
 
-export default class Navbar extends React.Component<NavbarProps, any> {
+export interface NavbarState {
+    items: {
+        name: String;
+        anchor: String;
+        primary: boolean;
+    }[];
+    isHidden: boolean;
+}
+
+export default class Navbar extends React.Component<NavbarProps, NavbarState> {
     constructor(props) {
         super(props);
 

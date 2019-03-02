@@ -7,17 +7,17 @@ export default {
   startDate: "August, 2014",
   endDate: "February, 2015",
   source: "https://github.com/RedbackThomson/LoLAlerter",
-  thumbnail: require("./../../assets/img/projects/lolalerter/logo.png"),
-  feature: require("./../../assets/img/projects/lolalerter/feature.png"),
+  thumbnail: require("Assets/img/projects/lolalerter/logo.png"),
+  feature: require("Assets/img/projects/lolalerter/feature.png"),
   images: [
-    require("./../../assets/img/projects/lolalerter/website.jpg"),
-    require("./../../assets/img/projects/lolalerter/inner.jpg")
+    require("Assets/img/projects/lolalerter/website.jpg"),
+    require("Assets/img/projects/lolalerter/inner.jpg")
   ],
   colour: "#45A9B7",
   backgroundColour: {
     background: "linear-gradient(0deg, #44aab8, #3a8e9a)"
   },
-  backgroundStroke: require("./../../assets/img/projects/lolalerter/bg-stroke.svg"),
+  backgroundStroke: require("Assets/img/projects/lolalerter/bg-stroke.svg"),
   languages: [
     "PHP", "Python"
   ],

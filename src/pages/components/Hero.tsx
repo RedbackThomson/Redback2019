@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Link} from "react-scroll";
 
-const logo = require("./../assets/img/logo-gradient.svg");
+const logo = require("Assets/img/logo-gradient.svg");
 
 export interface HeroProps {
 }

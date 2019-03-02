@@ -3,9 +3,13 @@ const {resolve} = require('path');
 const {CheckerPlugin} = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+        Assets: resolve(__dirname, '../../src/assets')
+    }
   },
   context: resolve(__dirname, '../../src'),
   module: {
