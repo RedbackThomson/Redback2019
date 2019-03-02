@@ -4,7 +4,7 @@ import {AppContainer} from "react-hot-loader";
 import Favicon from "react-favicon";
 import ReactGA from "react-ga";
 
-import Home from "./pages/Home";
+import AppRouter from "./router";
 
 import "Assets/scss/App.scss";
 
@@ -17,7 +17,7 @@ render(
     <AppContainer>
         <>
             <Favicon url={favicon} />
-            <Home/>
+            <AppRouter/>
         </>
     </AppContainer>,
     rootEl
@@ -27,12 +27,12 @@ render(
 declare let module: { hot: any };
 
 if (module.hot) {
-    module.hot.accept("./components/Home", () => {
+    module.hot.accept("./router", () => {
         render(
             <AppContainer>
                 <>
                     <Favicon url={favicon} />
-                    <Home/>
+                    <AppRouter/>
                 </>
             </AppContainer>,
             rootEl

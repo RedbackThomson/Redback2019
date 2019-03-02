@@ -1,6 +1,7 @@
 (function () {
   const express = require('express');
   const throng = require('throng');
+  const {join} = require('path');
   
   const sourceDir = 'dist';
   const PORT = process.env.PORT || 3000;
@@ -13,7 +14,12 @@
   
   function start() {
     var app = express();
+
     app.use(express.static(sourceDir));
+
+    app.get('*', (_, res) =>
+        res.sendFile(join(__dirname, sourceDir, '/index.html'))
+    );
        
     app.listen(PORT, () => {
       console.log(`Express server listening on port ${PORT} on ${WORKERS} worker(s)`);

@@ -1,5 +1,4 @@
 import * as React from "react";
-import classnames from "classnames";
 import Project from "./projects/Project";
 import BaseProject from "./projects/BaseProject";
 import SmallProject from "./projects/SmallProject";
