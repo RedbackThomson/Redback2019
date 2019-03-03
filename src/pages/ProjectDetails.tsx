@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import BaseProject from "./components/projects/BaseProject";
 import ProjectHero from "./components/ProjectHero";
 import HeroNav from "./components/HeroNav";
+import ProjectHeroBackground from "./components/ProjectHeroBackgound";
 
 export interface ProjectDetailsProps {
     match: {
@@ -36,6 +37,7 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
             <div className="app">
                 <Navbar />
                 <Hero inverse={project.dark} background={project.backgroundColour}>
+                    <ProjectHeroBackground project={project} />
                     <div className="d-flex flex-column h-100">
                         <HeroNav inverse={project.dark} />
                         <ProjectHero project={project} />

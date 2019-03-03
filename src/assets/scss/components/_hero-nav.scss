@@ -1,35 +1,35 @@
-.hero-nav {
-    &__container {
-        padding: 1rem 0;
-
-        @include media-breakpoint-down(sm) {
-            padding: 0rem;
-        }
+.hero-nav {  
+  &__container {
+    padding: 1rem 0;
+    
+    @include media-breakpoint-down(sm) {
+      padding: 0rem;
     }
-
-    &__logo {
-        max-height: 2rem;
-        margin-right: 0.5rem;
+  }
+  
+  &__logo {
+    max-height: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  &__username {
+    color: $light-font-colour;
+    font-size: 1.5rem;
+    pointer-events: none;
+    
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      font-size: 1.75rem;
     }
-
-    &__username {
-        color: $light-font-colour;
-        font-size: 1.5rem;
-        pointer-events: none;
-
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-            font-size: 1.75rem;
-        }
-
-        &--inverse {
-            color: $dark-font-colour;
-        }
+    
+    &--inverse {
+      color: $dark-font-colour;
     }
-
-    &__link {
-        &:hover {
-            text-decoration: none;
-        }
+  }
+  
+  &__link {
+    &:hover {
+      text-decoration: none;
     }
+  }
 }

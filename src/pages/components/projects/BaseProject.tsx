@@ -20,4 +20,5 @@ export default class BaseProject {
   anchor: string;
   small?: boolean;
   dark?: boolean;
+  darkSubtitle?: boolean;
 }

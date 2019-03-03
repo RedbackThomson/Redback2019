@@ -1,1 +1,15 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850 1024"><defs><style>.cls-1{fill:#fff;stroke:#b17;stroke-miterlimit:10;stroke-width:6px;opacity:0.3;}</style></defs><title>bg-shape</title><path class="cls-1" d="M1884,307S1175,185.5,686,574.5s-1164,264-1164,264l36,444L1900,1179Z"/><path class="cls-1" d="M1900,399S1417.61,678.91,796,742.5C165.5,807-478.5,579-478.5,579L-332,1450.5l2180-120Z"/><path class="cls-1" d="M1996,679S1306,943,738,919C113.7,892.62-749,986.5-749,986.5l36,444L1924,1331Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3714.1 1024" style="enable-background:new 0 0 3714.1 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.3;fill:#FFFFFF;stroke:#BB1177;stroke-width:6;stroke-miterlimit:10;enable-background:new    ;}
+</style>
+<title>bg-shape</title>
+<path class="st0" d="M1884,307c-271.3-143.5-709-121.5-1198,267.5s-1164,264-1164,264l36,444l4414.1,50.4
+	C3972.1,1332.9,2251.7,501.4,1884,307z"/>
+<path class="st0" d="M2231.9,367.1c-473-194.1-814.3,311.9-1435.9,375.4C165.5,807-478.5,579-478.5,579l146.5,871.5l3002,56.4
+	C2670,1506.9,2670,546.8,2231.9,367.1z"/>
+<path class="st0" d="M2820,876.9C1875.7,450.7,1306,943,738,919c-624.3-26.4-1487,67.5-1487,67.5l36,444l3923,106.4
+	C3210,1536.9,3408.1,1142.3,2820,876.9z"/>
+</svg>
