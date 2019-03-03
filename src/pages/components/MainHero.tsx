@@ -3,7 +3,7 @@ import {Link} from "react-scroll";
 
 const logo = require("Assets/img/logo-gradient.svg");
 
-export default class NavHero extends React.Component<any, undefined> {
+export default class MainHero extends React.Component<any, undefined> {
     render() {
         return (
             <div className="row h-100">

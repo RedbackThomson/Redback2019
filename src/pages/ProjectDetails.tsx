@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import AllProjects from "./components/projects/AllProjects";
 import Footer from "./components/Footer";
 import BaseProject from "./components/projects/BaseProject";
+import ProjectHero from "./components/ProjectHero";
+import HeroNav from "./components/HeroNav";
 
 export interface ProjectDetailsProps {
     match: {
@@ -31,12 +33,14 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
         let {project} = this.state;
 
         return (
-        <div className="app">
-            <Navbar />
-            <Hero >
-            </Hero>
-            <Footer />
-        </div>
+            <div className="app">
+                <Navbar />
+                <Hero>
+                    <HeroNav />
+                    <ProjectHero project={project} />
+                </Hero>
+                <Footer />
+            </div>
         );
     }
 }
