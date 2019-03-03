@@ -39,6 +39,13 @@
 
     a {
       color: $text-colour;
+
+      i {
+        background: -webkit-linear-gradient(bottom left, $redback-secondary, $redback-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
