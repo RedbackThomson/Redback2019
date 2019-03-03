@@ -1,5 +1,6 @@
 import * as React from "react";
 import Hero from "./components/Hero";
+import NavHero from "./components/NavHero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import AllProjects from "./components/projects/AllProjects";
@@ -21,7 +22,9 @@ export default class Home extends React.Component<any, any> {
         return (
             <div className="app">
                 <Navbar />
-                <Hero />
+                <Hero>
+                    <NavHero />
+                </Hero>
                 <Projects projects={projects} />
                 <Contact />
                 <Footer />

@@ -32,9 +32,9 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
 
         return (
         <div className="app">
-            {project.name}
             <Navbar />
-            <Hero />
+            <Hero >
+            </Hero>
             <Footer />
         </div>
         );
