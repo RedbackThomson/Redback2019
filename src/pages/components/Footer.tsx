@@ -31,13 +31,13 @@ export default class Footer extends React.Component<any, undefined> {
                   <div className="col-12 col-lg-4 order-lg-last footer__social">
                     {this.renderSocial("Github",
                     "https://github.com/RedbackThomson",
-                    "fab fa-github-square")}
+                    "fab fa-github")}
                     {this.renderSocial("Email",
                         "mailto:redbackthomson@gmail.com",
-                        "fas fa-envelope-square")}
+                        "fas fa-envelope")}
                     {this.renderSocial("Twitter",
                         "https://twitter.com/RedbackThomson",
-                        "fab fa-twitter-square")}
+                        "fab fa-twitter")}
                   </div>
                 </div>
               </div>
