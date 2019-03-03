@@ -35,9 +35,11 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
         return (
             <div className="app">
                 <Navbar />
-                <Hero>
-                    <HeroNav />
-                    <ProjectHero project={project} />
+                <Hero inverse={project.dark} background={project.backgroundColour}>
+                    <div className="d-flex flex-column h-100">
+                        <HeroNav inverse={project.dark} />
+                        <ProjectHero project={project} />
+                    </div>
                 </Hero>
                 <Footer />
             </div>

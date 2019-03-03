@@ -12,15 +12,30 @@
 
   &__logo {
     height: 10rem;
+    object-fit: contain;
+    align-self: center;
   }
 
-  &__username {
+  &__title {
     color: $light-font-colour;
     font-size: 3.5rem;
     pointer-events: none;
 
     @include media-breakpoint-down(sm) {
       font-size: 2.5rem;
+    }
+
+    &--inverse {
+      color: $dark-font-colour;
+    }
+  }
+
+  &__subtitle {
+    color: $secondary-light-font-colour;
+    font-size: 1.5rem;
+
+    &--inverse {
+      color: $secondary-dark-font-colour;
     }
   }
 

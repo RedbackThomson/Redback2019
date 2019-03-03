@@ -9,7 +9,7 @@ export default class MainHero extends React.Component<any, undefined> {
             <div className="row h-100">
                 <div className="col-lg-8 d-flex flex-column justify-content-center">
                     <img src={logo} className="hero__logo" />
-                    <div className="hero__username text-center">
+                    <div className="hero__title text-center">
                         RedbackThomson
                     </div>
                 </div>
