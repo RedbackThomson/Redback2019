@@ -24,6 +24,7 @@ export default {
   languages: [
     "Node", "MongoDB", "Heroku"
   ],
+  services: "Full Stack Web Development",
   web: true,
   body: "SD Hacks was a stunning website designed and created for the 2016 hackathon hosted at the University of California, San Diego. As this website was targeting techies, it needed to fit all devices and browsers without compromising on design and functionality. SD Hacks incorporated a built in application system, with an accompanying administration panel and user pages. It also had a section for sponsors to filter and download participants’ resumes. All of this was built on top of a MEAN stack, utilising Heroku for the hosting.",
   anchor: "sdhacks",

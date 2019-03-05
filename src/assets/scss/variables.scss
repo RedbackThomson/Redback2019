@@ -8,8 +8,8 @@ $secondary-dark-font-colour: #1b141b;
 $redback-primary: #6E3CAF;
 $redback-secondary: #51ccf5;
 
-$navigation-primary: #8379f4;
-$navigation-secondary: #66e9cb;
+$navigation-primary: $redback-secondary;
+$navigation-secondary: #6969f6;
 $navigation-inactive: rgb(158, 158, 158);
 $navigation-plain: #555;
 
@@ -23,3 +23,6 @@ $badge-web: #FFF;
 $global-drop-shadow: drop-shadow(0 0 2.5rem $dark-font-colour);
 $global-border-radius: 0.5rem;
 $global-box-shadow: 0 1px 30px 0 rgba(0, 0, 0, .2);
+
+$body-font-family: 'Open Sans', sans-serif !important;
+$header-font-family: 'Product Sans', sans-serif !important;

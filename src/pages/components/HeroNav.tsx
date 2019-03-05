@@ -18,11 +18,11 @@ export default class HeroNav extends React.Component<HeroNavProps, undefined> {
                     <div className="hero-nav__row row">
                         <div className="col d-flex flex-row justify-content-center justify-content-md-start align-items-center">
                             <img src={logo} className="hero-nav__logo" />
-                            <div className={classNames("hero-nav__username", {
+                            <h1 className={classNames("hero-nav__username", {
                                 "hero-nav__username--inverse": !!inverse
                             })}>
                                 RedbackThomson
-                            </div>
+                            </h1>
                         </div>
                     </div>
                 </div>

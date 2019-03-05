@@ -7,6 +7,7 @@ import BaseProject from "./components/projects/BaseProject";
 import ProjectHero from "./components/ProjectHero";
 import HeroNav from "./components/HeroNav";
 import ProjectHeroBackground from "./components/ProjectHeroBackgound";
+import ProjectSidebar from "./components/ProjectSidebar";
 
 export interface ProjectDetailsProps {
     match: {
@@ -43,6 +44,15 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
                         <ProjectHero project={project} />
                     </div>
                 </Hero>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col col-lg-4">
+                            <ProjectSidebar project={project} />
+                        </div>
+                    </div>
+                </div>
+
                 <Footer />
             </div>
         );

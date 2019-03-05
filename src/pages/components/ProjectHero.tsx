@@ -12,20 +12,17 @@ export default class ProjectHero extends React.Component<ProjectHeroProps, undef
 
         return (
             <div className="row h-100">
-                <div className="col-lg-8 d-flex flex-column justify-content-center">
-                    <div className={classnames("hero__title", "text-left", {
+                <div className="col d-flex flex-column justify-content-center">
+                    <h1 className={classnames("hero__title", "text-left", {
                         "hero__title--inverse": project.dark
                     })}>
                         {project.name}
-                    </div>
-                    <div className={classnames("hero__subtitle", "text-left", {
+                    </h1>
+                    <h2 className={classnames("hero__subtitle", "text-left", {
                         "hero__subtitle--inverse": project.dark || project.darkSubtitle
                     })}>
                         {project.subtitle}
-                    </div>
-                </div>
-                <div className="col-lg-4 d-flex flex-column justify-content-center">
-
+                    </h2>
                 </div>
             </div>
         );
