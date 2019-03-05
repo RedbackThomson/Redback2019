@@ -21,15 +21,14 @@ export interface ProjectDetailsState {
     project: BaseProject;
 }
 
-export default class ProjectDetails extends React.Component<ProjectDetailsProps, ProjectDetailsState> {
-    constructor(props) {
-        super(props);
+const getMatchingProject = (props: ProjectDetailsProps) =>
+    AllProjects.find(project => project.anchor
+        === props.match.params.projectAlias);
 
-        this.state = {
-            project: AllProjects.find(project => project.anchor ===
-                props.match.params.projectAlias)
-        };
-    }
+export default class ProjectDetails extends React.Component<ProjectDetailsProps, ProjectDetailsState> {
+    state: Readonly<ProjectDetailsState> = {
+        project: getMatchingProject(this.props)
+    };
 
     render() {
         let {project} = this.state;

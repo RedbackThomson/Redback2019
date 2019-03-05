@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
 
 export default class AppRouter extends React.Component<any, any> {
-
     render() {
         return (
             <Router>

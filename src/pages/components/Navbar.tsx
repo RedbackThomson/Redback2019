@@ -17,25 +17,21 @@ export interface NavbarState {
 }
 
 export default class Navbar extends React.Component<NavbarProps, NavbarState> {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            items: [
-                {
-                    name: "Projects",
-                    anchor: "projects",
-                    primary: true
-                },
-                {
-                    name: "Contact",
-                    anchor: "contact",
-                    primary: false
-                }
-            ],
-            isHidden: true
-        };
-    }
+    state: Readonly<NavbarState> = {
+        items: [
+            {
+                name: "Projects",
+                anchor: "projects",
+                primary: true
+            },
+            {
+                name: "Contact",
+                anchor: "contact",
+                primary: false
+            }
+        ],
+        isHidden: true
+    };
 
     hideBar = () => {
         this.setState({

@@ -6,15 +6,16 @@ import Projects from "./components/Projects";
 import AllProjects from "./components/projects/AllProjects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BaseProject from "./components/projects/BaseProject";
 
-export default class Home extends React.Component<any, any> {
-    constructor(props) {
-        super(props);
+export interface HomeState {
+    projects: BaseProject[];
+}
 
-        this.state = {
-            projects: AllProjects
-        };
-    }
+export default class Home extends React.Component<any, HomeState> {
+    state: Readonly<HomeState> = {
+        projects: AllProjects
+    };
 
     render() {
         let {projects} = this.state;
