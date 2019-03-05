@@ -7,18 +7,54 @@ export interface ProjectSidebarProps {
     project: BaseProject;
 }
 
+interface SidebarButtonProps {
+    children: React.ReactNode;
+    colour: string;
+    url: string;
+}
+
+interface SidebarButtonState {
+    hovered: boolean;
+}
+
 const headerClassName = classNames("sidebar__header");
 const bodyClassName = classNames("sidebar__body");
+
+class SidebarButton extends React.Component<any, SidebarButtonState> {
+    state: Readonly<SidebarButtonState> = {
+        hovered: false
+    };
+
+    render() {
+        const buttonClass = classNames("btn", "sidebar__link");
+        const {colour, url, children} = this.props;
+        const {hovered} = this.state;
+
+        const hoveredStyle = {
+            borderColor: colour,
+            backgroundColor: colour,
+        };
+
+        const unhoveredStyle = {
+            borderColor: colour,
+            color: colour
+        };
+
+        return (
+            <a href={url}
+                className={buttonClass}
+                style={!!hovered ? hoveredStyle : unhoveredStyle}
+                onMouseEnter={() => this.setState({hovered: true})}
+                onMouseLeave={() => this.setState({hovered: false})}>
+                {children}
+            </a>
+        );
+    };
+};
 
 export default class ProjectSidebar extends React.Component<ProjectSidebarProps, undefined> {
     renderLinks = () => {
         const {project} = this.props;
-
-        const buttonStyle = {
-            backgroundColor: project.colour,
-            borderColor: project.colour
-        };
-        const buttonClass = classNames("btn", "sidebar__link");
 
         if (!project.url && !project.source) {
             return <></>;
@@ -30,16 +66,16 @@ export default class ProjectSidebar extends React.Component<ProjectSidebarProps,
                     Links
                 </h3>
                 <div className={bodyClassName}>
-                    {!!project.url && <a href={project.url}
-                        className={buttonClass}
-                        style={buttonStyle}>
+                    {!!project.url && <SidebarButton colour={project.colour}
+                        url={project.url}>
                         Visit
-                    </a>}
-                    {!!project.source && <a href={project.source}
-                        className={buttonClass}
-                        style={buttonStyle}>
+                        </SidebarButton>
+                    }
+                    {!!project.source && <SidebarButton colour={project.colour}
+                        url={project.source}>
                         Source
-                    </a>}
+                        </SidebarButton>
+                    }
                 </div>
             </>
         );

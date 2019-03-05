@@ -14,7 +14,11 @@
     font-weight: 600;
 
     &:hover {
-      color: $white;
+      color: $white !important;
+
+      &:after {
+        color: $white;
+      }
     }
 
     &:not(:last-child) {
@@ -25,8 +29,7 @@
       content: '';
       font-family: "Font Awesome 5 Free";
       margin-left: 0.5rem;
-      color: $white;
-      transition: color 0.15s;
+      transition: color 0.15s ease-in-out;
       font-weight: 700;
     }
   }
