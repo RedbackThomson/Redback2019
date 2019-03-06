@@ -20,7 +20,7 @@ interface SidebarButtonState {
 const headerClassName = classNames("sidebar__header");
 const bodyClassName = classNames("sidebar__body");
 
-class SidebarButton extends React.Component<any, SidebarButtonState> {
+class SidebarButton extends React.Component<SidebarButtonProps, SidebarButtonState> {
     state: Readonly<SidebarButtonState> = {
         hovered: false
     };
@@ -49,8 +49,8 @@ class SidebarButton extends React.Component<any, SidebarButtonState> {
                 {children}
             </a>
         );
-    };
-};
+    }
+}
 
 export default class ProjectSidebar extends React.Component<ProjectSidebarProps, undefined> {
     renderLinks = () => {
