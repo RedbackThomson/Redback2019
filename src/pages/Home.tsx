@@ -21,13 +21,15 @@ export default class Home extends React.Component<any, HomeState> {
         let {projects} = this.state;
 
         return (
-            <div className="app">
-                <Navbar />
-                <Hero>
-                    <MainHero />
-                </Hero>
-                <Projects projects={projects} />
-                <Contact />
+            <div className="app d-flex flex-column h-100">
+                <div className="flex-shrink-0">
+                    <Navbar />
+                    <Hero>
+                        <MainHero />
+                    </Hero>
+                    <Projects projects={projects} />
+                    <Contact />
+                </div>
                 <Footer />
             </div>
         );
