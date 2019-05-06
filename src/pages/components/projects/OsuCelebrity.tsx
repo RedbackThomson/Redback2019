@@ -25,7 +25,7 @@ export default {
   web: false,
   appType: "Twitch",
   body: <>
-    osu!Celebrity was an automated Twitch stream for the populare game <a href="//osu.ppy.sh/">osu!</a>. This stream allowed players to queue up for their 30 seconds of fame, in which they would be able to play osu! in front of thousands of viewers. In this time, viewers could vote on whether they wanted to see more of this player, or move on to the next one. In just a few weeks we grew to 500+ daily viewers, peaking over 2,000 viewers on some days. The back-end system was built in Java, but utilises a Javascript and HTML front-end to overlay the game client.
+    osu!Celebrity was an automated Twitch stream for the popular game <a href="//osu.ppy.sh/">osu!</a>. This stream allowed players to queue up for their 30 seconds of fame, in which they would be able to play osu! in front of thousands of viewers. In this time, viewers could vote on whether they wanted to see more of this player, or move on to the next one. In just a few weeks we grew to 500+ daily viewers, peaking over 2,000 viewers on some days. The back-end system was built in Java, but utilises a Javascript and HTML front-end to overlay the game client.
   </>,
   anchor: "osucelebrity",
   small: true,
