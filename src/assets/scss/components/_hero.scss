@@ -1,30 +1,125 @@
 .hero {
-  z-index: -10;
   height: 25rem;
   background-image: url(./../img/grid_noise.png), linear-gradient(to top right, $dark-font-colour 0%, lighten($dark-font-colour, 10%) 100%);
   background-blend-mode: multiply;
   box-shadow: $global-box-shadow;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
 
   @include media-breakpoint-down(sm) {
-    padding: 2rem 0;
+    padding: 1.5rem 0 2rem;
   }
 
   &__logo {
     height: 10rem;
+    object-fit: contain;
+    align-self: center;
   }
 
-  &__username {
+  &__title {
     color: $light-font-colour;
     font-size: 3.5rem;
     pointer-events: none;
+    font-family: $header-font-family;
 
     @include media-breakpoint-down(sm) {
       font-size: 2.5rem;
+    }
+
+    &--inverse {
+      color: $dark-font-colour;
+    }
+  }
+
+  &__subtitle {
+    color: $secondary-light-font-colour;
+    font-size: 1.5rem;
+    font-family: $body-font-family;
+
+    &--inverse {
+      color: $secondary-dark-font-colour;
     }
   }
 
   &__navigation {
     z-index: 1;
+  }
+
+  &__feature {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+      pointer-events: none;
+    }
+
+    &--right {
+      img {
+        border-radius: 0 $global-border-radius $global-border-radius 0;
+      }
+    }
+
+  }
+
+  &__feature-bg {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: $global-border-radius;
+    overflow: hidden;
+    text-align: left;
+
+    img {
+      height: 100%;
+      width: auto;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+      pointer-events: none;
+    }
+
+    &--right {
+      right: 0;
+      text-align: right;
+
+      img {
+        border-radius: 0 $global-border-radius $global-border-radius 0;
+      }
+    }
+  }
+
+  &__stroke {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: $global-border-radius;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+    @include media-breakpoint-down(sm) {
+      top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $global-border-radius 0 0 $global-border-radius;
+      position: absolute;
+
+      @include media-breakpoint-down(sm) {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 }

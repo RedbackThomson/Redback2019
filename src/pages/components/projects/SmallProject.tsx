@@ -1,6 +1,8 @@
 import * as React from "react";
-import BaseProject from "./BaseProject";
 import classnames from "classnames";
+import {Link} from "react-router-dom";
+
+import BaseProject from "./BaseProject";
 
 export interface SmallProjectProps {
     project: BaseProject;
@@ -25,7 +27,7 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                     <div className={classnames("col-md-6", "col-lg-4",
                         "project__col--small")} id={`#${project.anchor}`}>
 
-                        {/* <a className="project__link" href="#"> */}
+                        <Link className="project__link" to={project.anchor}>
 
                             <div className={classnames("project__container",
                                 "project__container--small")}>
@@ -56,7 +58,7 @@ export default class SmallProject extends React.Component<SmallProjectProps, und
                                     </div>
                                 </div>
                             </div>
-                        {/* </a> */}
+                        </Link>
                     </div>
                 );
         }

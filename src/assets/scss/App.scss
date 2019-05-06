@@ -1,6 +1,21 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
 @import 'variables';
 @import 'typography';
 
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 @import 'components/all';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  color: $dark-font-colour;
+}
+
+#root {
+  height: 100%;
+}

@@ -1,10 +1,10 @@
 export default class BaseProject {
   name: string;
   subtitle: React.ReactNode;
-  url: string;
+  url?: string;
   startDate: string;
   endDate: string;
-  source: string;
+  source?: string;
   thumbnail: HTMLImageElement;
   feature: HTMLImageElement;
   images: HTMLImageElement[];
@@ -14,10 +14,12 @@ export default class BaseProject {
   featureBackground?: HTMLImageElement;
   featureBackgroundFlip?: boolean;
   languages: string[];
+  services: string;
   web: boolean;
   appType?: string;
-  body: string;
+  body: React.ReactNode;
   anchor: string;
   small?: boolean;
   dark?: boolean;
+  darkSubtitle?: boolean;
 }

@@ -2,9 +2,9 @@
   border: 2px solid $navigation-primary;
   background: none;
   color: $white !important;
-  font-family: 'Lato', sans-serif;
+  font-family: $body-font-family;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
 
   padding: 0.7rem 1.5rem;
   border-radius: $global-border-radius;
@@ -29,6 +29,7 @@
     margin-left: 0.5rem;
     color: $navigation-primary;
     transition: color 0.15s;
+    font-weight: 700;
   }
 
   &--block {

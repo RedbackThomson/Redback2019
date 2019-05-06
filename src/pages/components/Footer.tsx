@@ -17,7 +17,7 @@ export default class Footer extends React.Component<any, undefined> {
 
     render() {
         return (
-            <section id="footer" className="footer">
+            <section id="footer" className="footer mt-auto">
               <div className="container">
                 <div className="row">
                   <div className="col-12 col-lg-4 footer__logo">

@@ -10,8 +10,8 @@ export default {
   thumbnail: require("Assets/img/projects/lolalerter/logo.png"),
   feature: require("Assets/img/projects/lolalerter/feature.png"),
   images: [
+    require("Assets/img/projects/lolalerter/inner.jpg"),
     require("Assets/img/projects/lolalerter/website.jpg"),
-    require("Assets/img/projects/lolalerter/inner.jpg")
   ],
   colour: "#45A9B7",
   backgroundColour: {
@@ -21,7 +21,10 @@ export default {
   languages: [
     "PHP", "Python"
   ],
+  services: "Full Stack Web Development, Payment System Design",
   web: true,
-  body: "LoLAlerter was a project built out of necessity by the community. The program took only 3 simple steps to configure, making it easily accessible to the League of Legends streamers. LoLAlerter would alert the [Twitch](https://twitch.tv) streamer when they got a new subscriber or donation, by sending them a message in-game. This would allow them to keep their eyes on the game, yet still acknowledge and thank their generous viewers. The servers were built using Python, and the website was built in PHP on top of Laravel.",
+  body: <>
+    LoLAlerter was a project built out of necessity by the community. The program took only 3 simple steps to configure, making it easily accessible to the League of Legends streamers. LoLAlerter would alert the <a href="https://twitch.tv">Twitch</a> streamer when they got a new subscriber or donation, by sending them a message in-game. This would allow them to keep their eyes on the game, yet still acknowledge and thank their generous viewers. The servers were built using Python, and the website was built in PHP on top of Laravel.
+  </>,
   anchor: "lolalerter"
 } as BaseProject;

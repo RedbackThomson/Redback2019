@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Lato:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Lato:300,500,700|Open+Sans:300,500,600,700');
 
 body {
-  font-family: 'Product Sans', sans-serif !important;
+  font-family: $body-font-family;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: $header-font-family;
+}
+
+h3,h4,h5 {
+  font-weight: 300;
 }

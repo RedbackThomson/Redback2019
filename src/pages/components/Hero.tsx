@@ -1,34 +1,25 @@
 import * as React from "react";
-import {Link} from "react-scroll";
+import classNames from "classnames";
 
 const logo = require("Assets/img/logo-gradient.svg");
 
 export interface HeroProps {
+    children: React.ReactNode;
+    inverse?: boolean;
+    background?: React.CSSProperties;
 }
 
 export default class Hero extends React.Component<HeroProps, undefined> {
     render() {
+        const {background, inverse} = this.props;
+
         return (
-            <div className="hero">
+            <div className={classNames("hero", {
+                "hero--inverse": !!inverse
+            })}
+                style={background ? background : null}>
                 <div className="container h-100">
-                    <div className="row h-100">
-                        <div className="col-lg-8 d-flex flex-column justify-content-center">
-                            <img src={logo} className="hero__logo" />
-                            <div className="hero__username text-center">
-                                RedbackThomson
-                            </div>
-                        </div>
-                        <div className="col-lg-4 d-flex flex-column justify-content-center">
-                            <div className="hero__navigation">
-                                <Link to="projects" smooth={true} className="btn cta cta--block">
-                                    Projects
-                                </Link>
-                                <Link to="contact" smooth={true} className="btn cta cta--secondary cta--block">
-                                    Contact
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+                    {this.props.children}
                 </div>
             </div>
         );

@@ -1,0 +1,36 @@
+.hero-nav {  
+  &__container {
+    padding: 1rem 0;
+    
+    @include media-breakpoint-down(sm) {
+      padding: 0rem;
+    }
+  }
+  
+  &__logo {
+    max-height: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  &__username {
+    color: $light-font-colour;
+    font-size: 1.5rem;
+    pointer-events: none;
+    margin-bottom: 0;
+    
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      font-size: 1.75rem;
+    }
+    
+    &--inverse {
+      color: $dark-font-colour;
+    }
+  }
+  
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
