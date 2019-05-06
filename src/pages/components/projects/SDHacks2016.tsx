@@ -10,11 +10,10 @@ export default {
   thumbnail: require("Assets/img/projects/sdhacks/logo.png"),
   feature: require("Assets/img/projects/sdhacks/feature.png"),
   images: [
-    require("Assets/img/projects/sdhacks/feature.jpg"),
-    require("Assets/img/projects/sdhacks/website.jpg"),
-    require("Assets/img/projects/sdhacks/live.jpg"),
+    require("Assets/img/projects/sdhacks/prizes.jpg"),
     require("Assets/img/projects/sdhacks/resume_browser.jpg"),
-    require("Assets/img/projects/sdhacks/prizes.jpg")
+    require("Assets/img/projects/sdhacks/live.jpg"),
+    require("Assets/img/projects/sdhacks/website.jpg")
   ],
   colour: "#5A9AC2",
   backgroundColour: {

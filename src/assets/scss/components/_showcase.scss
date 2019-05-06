@@ -1,0 +1,48 @@
+.showcase {
+    $button-dim: 5rem;
+    $max-image-height: 20rem;
+
+    position: relative;
+    max-height: $max-image-height;
+    width: 100%;
+    margin: 1rem 0;
+
+    &__nav-container {
+        position: relative;
+    }
+
+    &__nav {
+        position: absolute;
+        top: #{5rem + $button-dim/2};
+        width: $button-dim;
+        height: $button-dim;
+        z-index: 1000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        &--next {
+            right: 0;
+        }
+
+        &--prev {
+            left: 0;
+        }
+    }
+
+    &__img-container {
+        width: auto;
+    }
+
+    &__img {
+        max-height: $max-image-height;
+        object-fit: contain;
+        user-select: none;
+    }
+}

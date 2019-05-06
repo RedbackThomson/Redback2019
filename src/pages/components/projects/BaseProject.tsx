@@ -17,7 +17,7 @@ export default class BaseProject {
   services: string;
   web: boolean;
   appType?: string;
-  body: string;
+  body: React.ReactNode;
   anchor: string;
   small?: boolean;
   dark?: boolean;

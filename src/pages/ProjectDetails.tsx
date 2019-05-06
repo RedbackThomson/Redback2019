@@ -8,6 +8,8 @@ import ProjectHero from "./components/ProjectHero";
 import HeroNav from "./components/HeroNav";
 import ProjectHeroBackground from "./components/ProjectHeroBackgound";
 import ProjectSidebar from "./components/ProjectSidebar";
+import ProjectDescription from "./components/ProjectDescription";
+import Showcase from "./components/Showcase";
 
 export interface ProjectDetailsProps {
     match: {
@@ -47,11 +49,18 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
 
                     <div className="container">
                         <div className="row">
-                            <div className="col col-lg-4">
+                            <div className="col-12 col-lg-4">
                                 <ProjectSidebar project={project} />
+                            </div>
+                            <div className="col-12 col-lg-6 offset-lg-1">
+                                <ProjectDescription project={project} />
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="w-100">
+                    <Showcase images={project.images} colour={project.colour} />
                 </div>
 
                 <Footer />

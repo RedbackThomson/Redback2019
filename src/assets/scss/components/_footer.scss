@@ -2,9 +2,12 @@
   $text-colour: transparentize($color: $white, $amount: 0.5);
   background: linear-gradient(to top right, $footer-dark-colour 0%, darken($footer-dark-colour, 5%) 100%);
   padding: 1.5rem 0;
-  min-height: 7rem;
   font-family: 'Lato', sans-serif !important;
   font-weight: 300;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 7rem;
+  }
 
   &__logo {
     display: flex;
