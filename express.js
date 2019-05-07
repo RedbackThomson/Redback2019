@@ -17,6 +17,7 @@
     var app = express();
 
     app.use('/static', express.static(staticDir));
+    app.use(express.static(sourceDir));
 
     app.get('*', (_, res) =>
         res.sendFile(join(__dirname, sourceDir, '/index.html'))
