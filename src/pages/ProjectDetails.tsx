@@ -10,6 +10,7 @@ import ProjectHeroBackground from "./components/ProjectHeroBackgound";
 import ProjectSidebar from "./components/ProjectSidebar";
 import ProjectDescription from "./components/ProjectDescription";
 import Showcase from "./components/Showcase";
+import Page, { PageState } from "./Page";
 
 export interface ProjectDetailsProps {
     match: {
@@ -19,7 +20,7 @@ export interface ProjectDetailsProps {
     };
 }
 
-export interface ProjectDetailsState {
+export interface ProjectDetailsState extends PageState {
     project: BaseProject;
 }
 
@@ -27,9 +28,11 @@ const getMatchingProject = (props: ProjectDetailsProps) =>
     AllProjects.find(project => project.anchor
         === props.match.params.projectAlias);
 
-export default class ProjectDetails extends React.Component<ProjectDetailsProps, ProjectDetailsState> {
+export default class ProjectDetails extends Page<ProjectDetailsProps, ProjectDetailsState> {
     state: Readonly<ProjectDetailsState> = {
-        project: getMatchingProject(this.props)
+        project: getMatchingProject(this.props),
+        title: `RedbackThomson | ${getMatchingProject(this.props).name}`,
+        themeColor: getMatchingProject(this.props).colour
     };
 
     render() {
@@ -64,6 +67,7 @@ export default class ProjectDetails extends React.Component<ProjectDetailsProps,
                 </div>
 
                 <Footer />
+                {super.render()}
             </div>
         );
     }

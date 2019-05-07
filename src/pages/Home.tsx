@@ -7,14 +7,17 @@ import AllProjects from "./components/projects/AllProjects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BaseProject from "./components/projects/BaseProject";
+import Page, { PageState } from "./Page";
 
-export interface HomeState {
+export interface HomeState extends PageState {
     projects: BaseProject[];
 }
 
-export default class Home extends React.Component<any, HomeState> {
+export default class Home extends Page<any, HomeState> {
     state: Readonly<HomeState> = {
-        projects: AllProjects
+        projects: AllProjects,
+        title: "RedbackThomson",
+        themeColor: "#3b343b"
     };
 
     render() {
@@ -31,6 +34,7 @@ export default class Home extends React.Component<any, HomeState> {
                     <Contact />
                 </div>
                 <Footer />
+                {super.render()}
             </div>
         );
     }

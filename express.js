@@ -3,6 +3,7 @@
   const throng = require('throng');
   const {join} = require('path');
   
+  const staticDir = 'src/assets/static';
   const sourceDir = 'dist';
   const PORT = process.env.PORT || 3000;
   const WORKERS = process.env.WEB_CONCURRENCY || 1;
@@ -15,7 +16,7 @@
   function start() {
     var app = express();
 
-    app.use(express.static(sourceDir));
+    app.use('/static', express.static(staticDir));
 
     app.get('*', (_, res) =>
         res.sendFile(join(__dirname, sourceDir, '/index.html'))
