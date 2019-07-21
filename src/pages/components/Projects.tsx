@@ -9,7 +9,7 @@ export interface ProjectsProps {
 
 export default class Projects extends React.Component<ProjectsProps, undefined> {
     render() {
-        let {projects} = this.props;
+        let { projects } = this.props;
 
         let largeProjects = projects.filter((proj) => !proj.small);
         let smallProjects = projects.filter((proj) => !!proj.small);
@@ -19,7 +19,7 @@ export default class Projects extends React.Component<ProjectsProps, undefined> 
                 {largeProjects.map((project, i) =>
                     <div className="row no-gutters projects__row"
                         key={project.anchor}>
-                        <Project project={project} right={i % 2 === 1} />
+                        <Project project={project} right={i % 2 === 0} />
                     </div>
                 )}
                 <div className="row no-gutters projects__row">
